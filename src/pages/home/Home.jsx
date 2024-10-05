@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
+import ServicesComp from "../services/ServicesComp";
 const Home = () => {
   return (
     <>
@@ -28,7 +29,42 @@ const Home = () => {
             <h2> Lorem ipsum dolor sit amet. </h2>
           </div>
           <div className="grid-3">
-            
+            <ServicesComp>
+              <ServicesComp.Icon>
+                <i className="fa-solid fa-fire"></i>
+              </ServicesComp.Icon>
+              <ServicesComp.H1>Lorem ipsum dolor sit amet.</ServicesComp.H1>
+              <ServicesComp.P more={true}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                inventore odit, accusamus pariatur similique deserunt voluptate
+                quasi quibusdam excepturi unde quaerat minus commodi corrupti
+                asperiores non ex iusto ea neque.
+              </ServicesComp.P>
+            </ServicesComp>
+            <ServicesComp>
+              <ServicesComp.Icon>
+                <i className="fa-solid fa-fire"></i>
+              </ServicesComp.Icon>
+              <ServicesComp.H1>Lorem ipsum dolor sit amet.</ServicesComp.H1>
+              <ServicesComp.P more={true}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                inventore odit, accusamus pariatur similique deserunt voluptate
+                quasi quibusdam excepturi unde quaerat minus commodi corrupti
+                asperiores non ex iusto ea neque.
+              </ServicesComp.P>
+            </ServicesComp>
+            <ServicesComp>
+              <ServicesComp.Icon>
+                <i className="fa-solid fa-fire"></i>
+              </ServicesComp.Icon>
+              <ServicesComp.H1>Lorem ipsum dolor sit amet.</ServicesComp.H1>
+              <ServicesComp.P more={true}>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
+                inventore odit, accusamus pariatur similique deserunt voluptate
+                quasi quibusdam excepturi unde quaerat minus commodi corrupti
+                asperiores non ex iusto ea neque.
+              </ServicesComp.P>
+            </ServicesComp>
           </div>
         </div>
       </main>

@@ -44,3 +44,6 @@ main.home-landing .flex {
 main.home-landing .flex a i {
   rotate: 45deg;
 }
+.home-services .grid-3 {
+  margin-top: 50px;
+}

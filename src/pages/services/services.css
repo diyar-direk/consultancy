@@ -1,0 +1,29 @@
+.services {
+  padding: 20px;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 6px;
+}
+.services:hover {
+  box-shadow: 0 0 20px #ddd;
+}
+.services .icon {
+  text-align: center;
+}
+.services .icon i {
+  font-size: 30px;
+  padding: 15px;
+  color: var(--main-color);
+  background-color: #07c1eb14;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+.services h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.services p {
+  opacity: 0.8;
+}
+.services p a {
+  color: var(--main-color);
+}
