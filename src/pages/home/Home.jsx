@@ -15,8 +15,10 @@ const Home = () => {
             rem optio placeat Consectetur, iusto.
           </h3>
           <div className="flex">
-            <Link className="btn">see our services</Link>
-            <Link className="btn2">
+            <Link to="/our_services" className="btn">
+              see our services
+            </Link>
+            <Link className="btn2" to="/contact_us">
               get started <i className="fa-solid fa-arrow-up-long"></i>
             </Link>
           </div>
