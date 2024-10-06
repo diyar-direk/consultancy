@@ -1,4 +1,94 @@
-.contact {
+.contact-landing {
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+}
+.contact-landing .image {
+  background: url(./contact.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  flex: 50%;
+  color: white;
+}
+
+.contact-landing .image .social {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+.contact-landing .image .social i {
+  color: var(--main-color);
+  font-size: 12px;
+  margin-right: 5px;
+  opacity: 0.6;
+}
+.contact-landing .image .social a {
+  font-size: 13px;
+  color: #eee;
+}
+
+.contact-landing .image .social a:hover {
+  color: var(--main-color);
+}
+
+.contact-landing > form {
+  padding: 20px 40px;
+  flex: 50%;
+}
+.contact-landing > form > div > h2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+.contact-landing > form .inp {
+  width: 90%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: solid 1px var(--border-color);
+}
+.contact-landing > form .inp:focus-within,
+.contact-landing > form textarea:focus {
+  border: solid 1px var(--main-color);
+}
+.contact-landing > form .inp i {
+  margin: 0px 15px;
+  color: var(--hover-color);
+  opacity: 0.7;
+}
+.contact-landing > form .inp input {
+  border: none;
+  background-color: transparent;
+  padding: 12px 10px;
+  width: 100%;
+}
+.contact-landing > form textarea {
+  width: 90%;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 10px;
+  resize: none;
+  border: solid 1px var(--border-color);
+  outline: none;
+}
+
+.contact-landing > form textarea::placeholder,
+.contact-landing > form input::placeholder {
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+.contact-landing > form textarea:focus::placeholder,
+.contact-landing > form input:focus::placeholder {
+  opacity: 0;
+}
+
+.contact-landing > form > button {
+  width: 90%;
+}
+/* .contact {
   margin: 100px 0px;
   width: 60%;
   border-radius: 16px;
@@ -85,8 +175,7 @@
 .contact .contact-form .name .first {
   width: 50%;
 }
-.contact .contact-form .name .first label {
-}
+
 .contact .contact-form input,
 .contact .contact-form textarea {
   width: 100%;
@@ -115,8 +204,7 @@
   font-weight: bold;
   color: var(--hover-color);
 }
-.contact .contact-form .text-contatiner {
-}
+
 .contact .contact-form .input-contatiner {
   width: 100%;
   border: none;
@@ -147,4 +235,4 @@
 }
 .contact .contact-form .contact-button:hover {
   gap: 10px;
-}
+} */

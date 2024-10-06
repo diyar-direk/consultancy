@@ -3,7 +3,84 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      <main className=" relative center">
+      <main className=" contact-landing flex">
+        <div className="image center flex-direction ">
+          <div className="overlay"></div>
+
+          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing
+            <br /> elit. Laboriosam, explicabo.
+          </p>
+          <div className="social between">
+            <div className="center">
+              <i className="fa-solid fa-phone"></i>
+              <a target="_blank" href="">
+                04328432
+              </a>
+            </div>
+            <div className="center">
+              <i className="fa-solid fa-envelope"></i>
+              <a target="_blank" href="">
+                diyardireki111@gmail.com
+              </a>
+            </div>
+            <div className="center">
+              <i className="fa-solid fa-location-dot"></i>
+              <a target="_blank" href="">
+                syria - alhasaka
+              </a>
+            </div>
+          </div>
+        </div>
+        <form className=" center flex-direction gap-20 section-color ">
+          <div>
+            <h2>contact us right now</h2>
+            <p>
+              Please complete the form below and the seller will receive your
+              message.
+            </p>
+          </div>
+          <div className="inp ">
+            <i className="fa-solid fa-user"></i>
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="please write your full name"
+              required
+            />
+          </div>
+          <div className="inp">
+            <i className="fa-solid fa-phone"></i>
+            <input
+              type="text"
+              name=""
+              id="phone"
+              placeholder="please write your phone number"
+              required
+            />
+          </div>
+          <div className="inp">
+            <i className="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="please write your email"
+              required
+            />
+          </div>
+          <textarea
+            name=""
+            id="message"
+            rows={5}
+            placeholder="please write your message"
+          ></textarea>
+          <button className="btn2">submit</button>
+        </form>
+      </main>
+      {/* <main className=" relative center">
         <div className="contact flex container section-color ">
           <div className="image">
             <img src={require(`../home/pexels-fauxels-3184416.jpg`)} alt="" />
@@ -32,19 +109,6 @@ const Contact = () => {
                     id="contact-first"
                     className="contact-input"
                     placeholder="Enter your first name..."
-                  />
-                </div>
-              </div>
-
-              <div className="labal second">
-                <label htmlFor="contact-second">Last Name</label>
-                <div className="input-contatiner">
-                  <i class="fa-regular fa-user"></i>
-                  <input
-                    type="text"
-                    id="contact-second"
-                    className="contact-input"
-                    placeholder="Enter your last name..."
                   />
                 </div>
               </div>
@@ -94,7 +158,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </main>
+      </main> */}
     </>
   );
 };

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Header from "./components/header/Header";
 import Home from "./pages/home/Home";
 import Footer from "./components/Footer";
@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact.jsx";
 import NotFound from "./pages/404/NotFound.jsx";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <Header />
@@ -14,7 +15,7 @@ function App() {
         <Route path="/contact_us" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+      {location.pathname !== "/contact_us" && <Footer />}
     </div>
   );
 }

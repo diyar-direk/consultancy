@@ -23,6 +23,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
+        <div className="overlay"></div>
       </main>
       <main className="home-services section-color center sub-page">
         <div className="container">
