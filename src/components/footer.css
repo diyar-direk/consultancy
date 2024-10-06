@@ -1,0 +1,18 @@
+footer {
+  background-color: #171717;
+  color: #ddd;
+  padding: 20px 0;
+}
+footer .grid-2 {
+  margin: 0;
+}
+footer .grid-2 > div {
+  justify-content: flex-end;
+  gap: 15px;
+}
+footer .grid-2 > div a {
+  color: #ddd;
+}
+footer .grid-2 > div a:hover {
+  color: var(--main-color);
+}

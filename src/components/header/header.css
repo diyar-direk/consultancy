@@ -8,6 +8,11 @@ header {
   top: 0;
   left: 0;
 }
+header.scroll {
+  background-color: #00000024;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 4px #00000042;
+}
 header .logo {
   width: 45px;
   object-fit: contain;
@@ -30,4 +35,24 @@ header div.flex-1 a.active,
 header div.flex-1 a:hover {
   opacity: 1;
   font-weight: bold;
+}
+
+.scroll-to-top {
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  position: fixed;
+  right: -60px;
+  bottom: 30px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 5px #196273d9;
+  z-index: 2;
+}
+.scroll-to-top.active {
+  right: 40px;
+}
+.scroll-to-top:hover {
+  background-color: var(--hover-color);
 }

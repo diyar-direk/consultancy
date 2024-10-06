@@ -9,16 +9,27 @@ ServicesComp.H1 = ({ children }) => {
   return <h1>{children}</h1>;
 };
 
-ServicesComp.P = ({ children, more }) => {
-  return (
-    <p>
-      {children} {more && <Link to={"/our_services"}>Read More ...</Link>}{" "}
-    </p>
-  );
+ServicesComp.P = ({ children }) => {
+  return <p>{children}</p>;
 };
 
 ServicesComp.Icon = ({ children }) => {
   return <div className="icon">{children}</div>;
+};
+ServicesComp.Details = ({ more }) => {
+  return (
+    <div className="flex details column-gap-20">
+      <Link to={"/contact_us"} className="btn2">
+        get started
+        <i className="fa-solid fa-angles-right eng-arrow"></i>
+      </Link>
+      {more && (
+        <Link to={"/services"} className="btn">
+          read more
+        </Link>
+      )}
+    </div>
+  );
 };
 
 export default ServicesComp;
