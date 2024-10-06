@@ -13,7 +13,9 @@ const Header = () => {
             <NavLink to={"/"}>home</NavLink>
             <NavLink to={"our_services"}>services</NavLink>
             <NavLink to={"/about_us"}>about us</NavLink>
-            <Link className="btn2">contact us</Link>
+            <Link to={`/contact`} className="btn2">
+              contact us
+            </Link>
             <Setting />
           </div>
         </div>
