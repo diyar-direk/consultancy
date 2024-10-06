@@ -47,3 +47,57 @@ main.home-landing .flex a i {
 .home-services .grid-3 {
   margin-top: 50px;
 }
+.home-services .container > a {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+.about-home > div {
+  height: 100%;
+}
+.about-home > div > div {
+  flex: 50%;
+  background: url(./pexels-wildlittlethingsphoto-933964.jpg) center no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.about-home > div > article {
+  flex: 50%;
+  height: 80vh;
+  padding: 40px;
+}
+
+.about-home > div > article p {
+  max-width: 80%;
+  margin: 20px auto;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.home-contact .grid-2 > .info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+  align-items: center;
+}
+.home-contact .grid-2 > .info > div {
+  flex: 44%;
+}
+
+.home-contact .grid-2 > .info > div i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #07c1eb14;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+.home-contact .grid-2 > .info > div h2 {
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1;
+  font-size: 19px;
+}
