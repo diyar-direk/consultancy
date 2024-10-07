@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Footer from "./components/Footer";
 import Contact from "./pages/contact/Contact.jsx";
 import NotFound from "./pages/404/NotFound.jsx";
+import AboutUs from "./pages/about us/AboutUs.jsx";
 
 function App() {
   const location = useLocation();
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact_us" element={<Contact />} />
+        <Route path="/about_us" element={<AboutUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {location.pathname !== "/contact_us" && <Footer />}

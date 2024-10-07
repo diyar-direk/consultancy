@@ -10,6 +10,12 @@
 .services .icon {
   text-align: center;
 }
+.services .icon img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
 .services .icon i {
   font-size: 30px;
   padding: 15px;

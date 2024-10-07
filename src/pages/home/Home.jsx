@@ -29,42 +29,42 @@ const Home = () => {
         <div className="container">
           <div className="center title flex-direction">
             <h1 className="title">our services</h1>
-            <h2> Lorem ipsum dolor sit amet. </h2>
+            <h2> We provide innovative solutions for success. </h2>
           </div>
-          <div className="grid-3">
+          <div className="grid-3 align-start">
             <ServicesComp>
               <ServicesComp.Icon>
-                <i className="fa-solid fa-fire"></i>
+                <img src={require("./icons8-monitoring-50.png")} alt="" />
               </ServicesComp.Icon>
-              <ServicesComp.H1>Lorem ipsum dolor sit amet.</ServicesComp.H1>
+              <ServicesComp.H1>Third-Party Monitoring (TPM).</ServicesComp.H1>
               <ServicesComp.P>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-                inventore odit, accusamus pariatur similique deserunt voluptate
-                quasi quibusdam
+                Our TPM services offer independent, objective assessments of
+                projects and programs across various sectors.
               </ServicesComp.P>
               <ServicesComp.Details more={true} />
             </ServicesComp>
             <ServicesComp>
               <ServicesComp.Icon>
-                <i className="fa-solid fa-fire"></i>
+                <img src={require("./icons8-training-48.png")} alt="" />
               </ServicesComp.Icon>
-              <ServicesComp.H1>Lorem ipsum dolor sit amet.</ServicesComp.H1>
+              <ServicesComp.H1>Capacity Building & Training.</ServicesComp.H1>
               <ServicesComp.P>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-                inventore odit, accusamus pariatur similique deserunt voluptate
-                quasi quibusdam
+                We offer capacity-building programs tailored to the needs of
+                local NGOs, INGOs, and private organisations.
               </ServicesComp.P>
               <ServicesComp.Details more={true} />
             </ServicesComp>
             <ServicesComp>
               <ServicesComp.Icon>
-                <i className="fa-solid fa-fire"></i>
+                <img src={require("./icons8-chart-50.png")} alt="" />
               </ServicesComp.Icon>
-              <ServicesComp.H1>Lorem ipsum dolor sit amet.</ServicesComp.H1>
+              <ServicesComp.H1>
+                Evaluations (External & Internal).
+              </ServicesComp.H1>
               <ServicesComp.P>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi
-                inventore odit, accusamus pariatur similique deserunt voluptate
-                quasi quibusdam
+                We conduct both external and internal evaluations of projects
+                and programs to assess their relevance, efficiency,
+                effectiveness, sustainability, and impact.
               </ServicesComp.P>
               <ServicesComp.Details more={true} />
             </ServicesComp>
@@ -78,11 +78,15 @@ const Home = () => {
           <article className="center flex-direction">
             <div className="center title flex-direction">
               <h1 className="title">About Us</h1>
-              <h2> Lorem ipsum dolor sit amet. </h2>
+              <h2> our goal is to exceed your expectations. </h2>
             </div>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              adipisci quia tempore
+              At NESCO, we are committed to delivering accurate, reliable, and
+              impactful monitoring, evaluation, and capacity-building services
+              to organisations operating in Northeast Syria. Founded with the
+              mission of supporting humanitarian, development, and private
+              sector actors, our goal is to provide evidence-based insights that
+              guide effective decision-making and promote sustainable outcomes.
             </p>
             <div className="flex gap-20">
               <Link className="btn2"> read more </Link>
