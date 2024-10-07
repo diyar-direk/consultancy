@@ -17,6 +17,14 @@ header.scroll div.flex-1 a {
   color: white;
   opacity: 0.7;
 }
+header.scroll .menu {
+  color: white;
+}
+header .menu {
+  color: black;
+  cursor: pointer;
+  display: none;
+}
 header.scroll .language span,
 header.scroll .language i {
   color: white;
@@ -31,6 +39,7 @@ header div.flex-1 a {
   font-weight: 600;
   text-transform: capitalize;
 }
+
 header div.flex-1 a {
   color: black;
   opacity: 0.5;
@@ -65,6 +74,56 @@ header div.flex-1 a:hover {
   animation: scroll-to-top 1.5s infinite;
 }
 
+nav.navbar {
+  position: fixed;
+  z-index: 2;
+  background: #0000006b;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  top: 55px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 15px 0;
+  box-shadow: 0 18px 20px #00000029;
+}
+nav.navbar.active {
+  max-height: 500px;
+  opacity: 1;
+  pointer-events: all;
+  overflow: visible;
+}
+nav.navbar a {
+  display: block;
+  color: white;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+nav.navbar a:hover,
+nav.navbar a.active,
+nav.navbar a:hover i {
+  color: var(--main-color);
+}
+nav.navbar a i {
+  margin-right: 10px;
+}
+nav.navbar .language {
+  margin: 0;
+  color: white;
+}
+nav.navbar .language > article {
+  bottom: -98px;
+  background: #00000078;
+  width: 100px;
+  left: -30px;
+}
+nav.navbar .flex i {
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
 @keyframes scroll-to-top {
   0%,
   10%,
@@ -77,5 +136,30 @@ header div.flex-1 a:hover {
   40%,
   60% {
     transform: translateY(5px);
+  }
+}
+
+@media (max-width: 1000px) {
+  header div.flex-1 a,
+  .language {
+    font-size: 15px;
+  }
+  header {
+    height: 60px;
+  }
+}
+@media (max-width: 750px) {
+  header div.flex-1 a,
+  header .language {
+    display: none;
+  }
+  header .menu {
+    display: flex;
+  }
+  header {
+    height: 55px;
+  }
+  header .logo {
+    width: 40px;
   }
 }

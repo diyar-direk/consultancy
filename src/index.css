@@ -74,16 +74,15 @@ h1 > span.inside-span {
 .section-color {
   background-color: var(--section-color);
 }
-.margin-top{
+.margin-top {
   margin-top: 50px;
 }
 body {
-  --font-color: black;
   --body-color: #fff;
   --main-color: #07c1eb;
   --border-color: #83838340;
   --hover-color: #1088a3;
-  --section-color: #f7f8fa;
+  --section-color: #f2f2f2;
   background-color: var(--body-color);
   overflow-x: hidden;
 }
@@ -128,7 +127,7 @@ body.arabic {
   color: white;
 }
 .btn:hover::before {
-  height: 200%;
+  height: 230%;
   width: 200%;
   opacity: 1;
   opacity: 1;
@@ -216,14 +215,34 @@ h1.title {
   opacity: 0.7;
   z-index: -1;
 }
+
+.en-arrow:hover i {
+  animation: 0.3s alternate infinite en-arrow;
+}
+.align-center {
+  align-items: center;
+}
+@keyframes en-arrow {
+  100% {
+    transform: translateX(5px);
+  }
+}
+
 @media (max-width: 1000px) {
   .btn,
   .btn2 {
     padding: 8px 10px;
   }
-
+  main.landing-img {
+    margin-top: 60px;
+  }
   .container {
     width: 85%;
+  }
+}
+@media (max-width: 750px) {
+  main.landing-img {
+    margin-top: 55px;
   }
 }
 @media (max-width: 675px) {

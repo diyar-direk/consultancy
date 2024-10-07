@@ -1,5 +1,5 @@
 .contact-landing {
-  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px) !important;
 }
 .contact-landing .image {
   background: url(./contact.jpg) center no-repeat;
@@ -8,8 +8,11 @@
   z-index: 1;
   flex: 50%;
   color: white;
+  padding: 20px;
 }
-
+.contact-landing .image h1 {
+  text-align: center;
+}
 .contact-landing .image .social {
   position: absolute;
   bottom: 15px;
@@ -87,6 +90,11 @@
 .contact-landing > form > button {
   width: 90%;
 }
+
+.contact-landing > form .form-p a {
+  color: var(--main-color);
+}
+
 .contact-landing.join .image {
   background: url(./pexels-hillaryfox-1595385.jpg) center no-repeat;
   background-size: cover;

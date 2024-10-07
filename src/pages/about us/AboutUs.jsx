@@ -3,7 +3,7 @@ import "./about.css";
 const AboutUs = () => {
   return (
     <>
-      <main className="center about-main-height section-color">
+      <main className="center landing-img section-color">
         <div className="container">
           <div className="about-us grid-2">
             <div className="text flex-direction center">
@@ -21,6 +21,7 @@ const AboutUs = () => {
             </div>
             <div className="image">
               <img
+                loading="lazy"
                 src={require("./Contact-Us-Vector-Illustration-Part-02-1-removebg-preview.png")}
                 alt=""
               />
@@ -28,17 +29,21 @@ const AboutUs = () => {
           </div>
         </div>
       </main>
-      <main className="center relative about-main-height body-color">
+      <main className="center relative sub-page body-color">
         <div className="spikes"></div>
 
         <div className="container">
           <div className="about-us grid-2">
             <div className="image">
-              <img src={require("./7000961.jpg")} alt="" />
+              <img loading="lazy" src={require("./7000961.jpg")} alt="" />
             </div>
             <div className="about-sections  flex-direction center">
               <div className="about-section flex">
-                <img src={require("./icons8-goal-48.png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-goal-48.png")}
+                  alt=""
+                />
 
                 <div className="text">
                   <h3>Our Mission</h3>
@@ -54,7 +59,11 @@ const AboutUs = () => {
                 </div>
               </div>
               <div className="about-section flex">
-                <img src={require("./icons8-surprise-50 (1).png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-surprise-50 (1).png")}
+                  alt=""
+                />
 
                 <div className="text">
                   <h3>Our Vision</h3>
@@ -71,17 +80,17 @@ const AboutUs = () => {
           </div>
         </div>
       </main>
-      <main className="center relative about-main-height section-color">
-        <div className="dots dots-down">
-
-        </div>
-        <div className="dots dots-up">
-
-        </div>
+      <main className="center relative sub-page section-color">
+        <div className="dots dots-down"></div>
+        <div className="dots dots-up"></div>
         <div className="container margin-top ">
           <div className="about-sections">
             <div className="about-section flex">
-              <img src={require("./icons8-why-100.png")} alt="" />
+              <img
+                loading="lazy"
+                src={require("./icons8-why-100.png")}
+                alt=""
+              />
 
               <div className="text">
                 <h3>Why NESCO?</h3>
@@ -102,7 +111,11 @@ const AboutUs = () => {
           <div className="about-us ">
             <div className="about-sections">
               <div className="about-section flex ">
-                <img src={require("./icons8-direction-50.png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-direction-50.png")}
+                  alt=""
+                />
 
                 <div className="text">
                   <h3>Our Approach</h3>
@@ -121,7 +134,11 @@ const AboutUs = () => {
             </div>
             <div className="about-sections">
               <div className="about-section flex ">
-                <img src={require("./icons8-team-48.png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-team-48.png")}
+                  alt=""
+                />
 
                 <div className="text">
                   <h3>Meet Our Team</h3>

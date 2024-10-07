@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 const JoinUs = () => {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+  function handleForm(e) {
+    setForm({ ...form, [e.target.id]: e.target.value });
+  }
+  const [file, setFile] = useState(false);
+  const [fileErr, setFileErr] = useState(false);
+
   return (
     <>
       <main className="contact-landing join landing-img flex">
@@ -44,45 +56,74 @@ const JoinUs = () => {
           <div className="inp ">
             <i className="fa-solid fa-user"></i>
             <input
+              onInput={handleForm}
               type="text"
               name=""
               id="name"
               placeholder="please write your full name"
               required
+              value={form.name}
             />
           </div>
           <div className="inp">
             <i className="fa-solid fa-phone"></i>
             <input
+              onInput={handleForm}
               type="text"
               name=""
               id="phone"
               placeholder="please write your phone number"
               required
+              value={form.phone}
             />
           </div>
           <div className="inp">
             <i className="fa-solid fa-envelope"></i>
             <input
+              onInput={handleForm}
               type="email"
               name=""
               id="email"
               placeholder="please write your email"
               required
+              value={form.email}
             />
           </div>
 
           <label htmlFor="file" className="inp">
-            <input type="file" id="file" />
+            <input
+              type="file"
+              id="file"
+              accept=".pdf,.doc,.docx"
+              onInput={(e) => {
+                const file = e.target.files[0];
+                if (file) {
+                  const isValid = [
+                    "application/pdf",
+                    "application/msword",
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                  ].includes(file.type);
+                  if (isValid) {
+                    setFile(file);
+                    setFileErr(false);
+                  } else {
+                    setFileErr(true);
+                  }
+                }
+              }}
+            />
             <i className="fa-solid fa-file"></i>
             click here to upload your CV
           </label>
-
+          {fileErr && <p className="text-error"> please upload your CV </p>}
+          {file && <p> uploded file : {file.name} </p>}
           <textarea
+            onInput={handleForm}
             name=""
             id="message"
             rows={5}
             placeholder="please write your message"
+            value={form.message}
           ></textarea>
           <button className="btn2">submit</button>
         </form>

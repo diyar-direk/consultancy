@@ -1,10 +1,40 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./services.css";
 import { Link } from "react-router-dom";
-window.addEventListener("scroll", (e) => {
-    
-});
+
 const Services = () => {
+  useEffect(() => {
+    const serviceElements = document.querySelectorAll(
+      ".services-page .info > div"
+    );
+    const linkElements = document.querySelectorAll(
+      ".services-page aside a:not(.contact)"
+    );
+
+    const handleScroll = () => {
+      if (serviceElements.length > 0 && linkElements.length > 0) {
+        for (let i = 0; i < serviceElements.length; i++) {
+          const sectionTop = serviceElements[i].offsetTop;
+
+          const nextSectionTop =
+            serviceElements[i + 1]?.offsetTop || document.body.scrollHeight;
+
+          if (
+            window.scrollY >= sectionTop - 100 &&
+            window.scrollY < nextSectionTop
+          ) {
+            linkElements.forEach((link) => link.classList.remove("active"));
+            linkElements[i].classList.add("active");
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <main className="center services-landing landing-img">
@@ -16,13 +46,14 @@ const Services = () => {
           </p>
         </div>
       </main>
+
       <main className="center section-color sub-page services-page">
         <div className="container">
           <div className="flex wrap align-start">
             <div className="info">
+              {/* محتوى الأقسام */}
               <div id="our_services">
                 <h1>our services</h1>
-
                 <p>
                   At NESCO, we provide a wide range of tailored services
                   designed to meet the needs of organisations working in
@@ -79,7 +110,11 @@ const Services = () => {
               </div>
               <div id="Capacity">
                 <h1>Capacity Building & Training</h1>
-                <img src={require("./IMG-20241007-WA0007.jpg")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./IMG-20241007-WA0007.jpg")}
+                  alt=""
+                />
                 <p>
                   We offer capacity-building programs tailored to the needs of
                   local NGOs, INGOs, and private organisations. Our workshops
@@ -105,6 +140,7 @@ const Services = () => {
               <div id="Technical">
                 <h1>Technical and Administrative Consultations</h1>
                 <img
+                  loading="lazy"
                   src={require("./pexels-jep-gambardella-7689757.jpg")}
                   alt=""
                 />
@@ -114,7 +150,7 @@ const Services = () => {
                   challenges. Whether it’s developing new strategies, improving
                   operational efficiencies, or ensuring compliance with donor
                   requirements, our team is here to support your organisation
-                  with hands-on guidance and tailored solutions
+                  with hands-on guidance and tailored solutions.
                 </p>
               </div>
             </div>

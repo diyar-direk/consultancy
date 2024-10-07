@@ -5,9 +5,14 @@ import ServicesComp from "../services/ServicesComp";
 const Home = () => {
   return (
     <>
-      <main className="home-landing center relative ">
-        <img src={require("./right-shade.png")} alt="" />
-        <img className="left" src={require("./left-shade.png")} alt="" />
+      <main className="home-landing center relative landing-img ">
+        <img loading="lazy" src={require("./right-shade.png")} alt="" />
+        <img
+          loading="lazy"
+          className="left"
+          src={require("./left-shade.png")}
+          alt=""
+        />
         <div className="container center flex-direction ">
           <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
           <h3>
@@ -34,29 +39,41 @@ const Home = () => {
           <div className="grid-3 align-start">
             <ServicesComp>
               <ServicesComp.Icon>
-                <img src={require("./icons8-monitoring-50.png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-monitoring-50.png")}
+                  alt=""
+                />
               </ServicesComp.Icon>
               <ServicesComp.H1>Third-Party Monitoring (TPM).</ServicesComp.H1>
               <ServicesComp.P>
                 Our TPM services offer independent, objective assessments of
                 projects and programs across various sectors.
               </ServicesComp.P>
-              <ServicesComp.Details more={true} />
+              <ServicesComp.Details />
             </ServicesComp>
             <ServicesComp>
               <ServicesComp.Icon>
-                <img src={require("./icons8-training-48.png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-training-48.png")}
+                  alt=""
+                />
               </ServicesComp.Icon>
               <ServicesComp.H1>Capacity Building & Training.</ServicesComp.H1>
               <ServicesComp.P>
                 We offer capacity-building programs tailored to the needs of
                 local NGOs, INGOs, and private organisations.
               </ServicesComp.P>
-              <ServicesComp.Details more={true} />
+              <ServicesComp.Details />
             </ServicesComp>
             <ServicesComp>
               <ServicesComp.Icon>
-                <img src={require("./icons8-chart-50.png")} alt="" />
+                <img
+                  loading="lazy"
+                  src={require("./icons8-chart-50.png")}
+                  alt=""
+                />
               </ServicesComp.Icon>
               <ServicesComp.H1>
                 Evaluations (External & Internal).
@@ -66,7 +83,7 @@ const Home = () => {
                 and programs to assess their relevance, efficiency,
                 effectiveness, sustainability, and impact.
               </ServicesComp.P>
-              <ServicesComp.Details more={true} />
+              <ServicesComp.Details />
             </ServicesComp>
           </div>
           <Link className="btn2"> explorer our services </Link>
@@ -113,12 +130,12 @@ const Home = () => {
                 results that help our clients achieve their objectives.
               </p>
               <h3>Do you want to become one of us?</h3>
-              <Link to={"/join_us"} className="btn2 d-block">
+              <Link to={"/join_us"} className="btn2 d-block en-arrow">
                 join us <i className="fa-solid fa-right-long"></i>
               </Link>
             </div>
             <div className="image">
-              <img src={require("./3.jpg")} alt="" />
+              <img loading="lazy" src={require("./3.jpg")} alt="" />
             </div>
           </div>
         </div>

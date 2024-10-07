@@ -26,7 +26,8 @@
 }
 .services h1 {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 22px;
+  text-align: center;
 }
 .services p {
   opacity: 0.8;
@@ -37,6 +38,7 @@
   font-size: 12px;
   width: 100%;
   text-align: center;
+  white-space: nowrap;
 }
 .services .details > a i {
   margin-left: 5px;
