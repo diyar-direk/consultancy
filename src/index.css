@@ -74,6 +74,9 @@ h1 > span.inside-span {
 .section-color {
   background-color: var(--section-color);
 }
+.margin-top{
+  margin-top: 50px;
+}
 body {
   --font-color: black;
   --body-color: #fff;

@@ -6,6 +6,7 @@ import Contact from "./pages/contact/Contact.jsx";
 import NotFound from "./pages/404/NotFound.jsx";
 import Services from "./pages/services/Services.jsx";
 import JoinUs from "./pages/contact/joinUs.jsx";
+import AboutUs from "./pages/about us/AboutUs.jsx";
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <Route path="/contact_us" element={<Contact />} />
         <Route path="/join_us" element={<JoinUs />} />
         <Route path="/our_services" element={<Services />} />
+        <Route path="/about_us" element={<AboutUs />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {showFooter && <Footer />}
