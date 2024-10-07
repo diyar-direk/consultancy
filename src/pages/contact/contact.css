@@ -103,12 +103,14 @@
   border-radius: 10px;
   padding: 10px;
   resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
 }
 .contact .contact-form input::placeholder,
 .contact .contact-form textarea::placeholder {
   font-size: 14px !important;
   color: #777 !important;
-  letter-spacing: 1px;
+  letter-spacing: 0px;
 }
 .contact .contact-form .input-contatiner i {
   font-size: 15px;
