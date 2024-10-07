@@ -35,3 +35,99 @@
 .services .details > a i {
   margin-left: 5px;
 }
+
+.services-landing {
+  background: url(./breadcrumb-5.webp) center no-repeat;
+  background-size: cover;
+}
+.services-landing h1 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 1.6;
+}
+.services-landing p {
+  color: white;
+  max-width: 50%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.services-page .align-start {
+  gap: 30px;
+}
+.services-page .info {
+  flex: calc(100% - 380px);
+}
+.services-page .info h1 {
+  text-transform: capitalize;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.services-page .info h1::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--hover-color);
+  margin-right: 10px;
+}
+.services-page .info img {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.services-page .info p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.services-page aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 350px;
+  padding: 20px 15px;
+  background-color: #f4f4f4;
+  position: sticky;
+  top: 90px;
+  border-radius: 6px;
+}
+.services-page aside a {
+  border-radius: 6px;
+  display: block;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  position: relative;
+}
+.services-page aside a:not(.contact):hover,
+.services-page aside a.active {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.services-page aside a::after {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  right: 15px;
+}
+.services-page aside a.contact {
+  background-color: var(--main-color);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.services-page aside a.contact::after {
+  content: "\f095";
+  margin-left: 6px;
+  position: static;
+}

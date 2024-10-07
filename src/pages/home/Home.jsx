@@ -15,12 +15,15 @@ const Home = () => {
             rem optio placeat Consectetur, iusto.
           </h3>
           <div className="flex">
-            <Link className="btn">see our services</Link>
-            <Link className="btn2">
+            <Link to="/our_services" className="btn">
+              see our services
+            </Link>
+            <Link className="btn2" to="/contact_us">
               get started <i className="fa-solid fa-arrow-up-long"></i>
             </Link>
           </div>
         </div>
+        <div className="overlay"></div>
       </main>
       <main className="home-services section-color center sub-page">
         <div className="container">
@@ -88,59 +91,30 @@ const Home = () => {
           </article>
         </div>
       </main>
-      <main className="sub-page center flex-direction home-contact section-color">
+      <main className="sub-page center flex-direction home-team section-color">
         <div className="center title flex-direction">
-          <h1 className="title">contact us</h1>
+          <h1 className="title"> Our Team</h1>
           <h2> Lorem ipsum dolor sit amet. </h2>
         </div>
         <div className="container">
-          <div className="grid-2 align-start">
+          <div className="grid-2">
             <div className="info">
-              <div>
-                <div className="center gap-20">
-                  <i className="fa-solid fa-map-location-dot"></i>
-                  <div className="flex-1">
-                    <h2> our location</h2>
-                    <a href="" target="_blank">
-                      syria alhasaka
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="center gap-20">
-                  <i className="fa-solid fa-envelope"></i>
-                  <div className="flex-1">
-                    <h2> our email</h2>
-                    <a href="" target="_blank">
-                      example@222.gmail.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="center gap-20">
-                  <i className="fa-solid fa-phone"></i>
-                  <div className="flex-1">
-                    <h2> our phone</h2>
-                    <a href="" target="_blank">
-                      +963 938 094
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="center gap-20">
-                <i className="fa-brands fa-facebook"></i>
-                <div className="flex-1">
-                  <h2> facebooke</h2>
-                  <a href="" target="_blank">
-                    +963 938 094
-                  </a>
-                </div>
-              </div>
+              <h2>Meet our team </h2>
+              <p>
+                NESCO brings together a team of highly experienced professionals
+                with expertise in monitoring and evaluation, data analysis, and
+                capacity-building across multiple sectors. With a deep
+                understanding of both local and international contexts, we pride
+                ourselves on delivering globally informed, regionally relevant
+                results that help our clients achieve their objectives.
+              </p>
+              <h3>Do you want to become one of us?</h3>
+              <Link to={"/join_us"} className="btn2 d-block">
+                join us <i className="fa-solid fa-right-long"></i>
+              </Link>
             </div>
-            <div className="map">
-              <img src={require("./GoogleMapTA.webp")} alt="" />
+            <div className="image">
+              <img src={require("./3.jpg")} alt="" />
             </div>
           </div>
         </div>

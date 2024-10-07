@@ -9,9 +9,17 @@ header {
   left: 0;
 }
 header.scroll {
-  background-color: #00000024;
+  background-color: #0000004f;
   backdrop-filter: blur(10px);
   box-shadow: 0 0 4px #00000042;
+}
+header.scroll div.flex-1 a {
+  color: white;
+  opacity: 0.7;
+}
+header.scroll .language span,
+header.scroll .language i {
+  color: white;
 }
 header .logo {
   width: 45px;
@@ -23,12 +31,9 @@ header div.flex-1 a {
   font-weight: 600;
   text-transform: capitalize;
 }
-header div.flex-1 a:not(.btn2) {
+header div.flex-1 a {
   color: black;
   opacity: 0.5;
-}
-header div.flex-1 a.btn2 {
-  font-size: 13px;
 }
 
 header div.flex-1 a.active,

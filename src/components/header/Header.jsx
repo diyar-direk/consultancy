@@ -1,16 +1,16 @@
 import React from "react";
 import Logo from "../Logo";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./header.css";
 import Setting from "../Setting";
 const Header = () => {
   window.addEventListener("scroll", () => {
     const btn = document.querySelector(".scroll-to-top");
     const header = document.querySelector("header");
-    if (window.scrollY >= 500) btn.classList.add("active");
-    else btn.classList.remove("active");
-    if (window.scrollY >= 600) header.classList.add("scroll");
-    else header.classList.remove("scroll");
+    if (window.scrollY >= 500 && btn) btn.classList.add("active");
+    else btn && btn.classList.remove("active");
+    if (window.scrollY >= 600 && header) header.classList.add("scroll");
+    else header && header.classList.remove("scroll");
   });
   return (
     <>
@@ -23,6 +23,7 @@ const Header = () => {
               <NavLink to={"our_services"}>services</NavLink>
               <NavLink to={"/about_us"}>about us</NavLink>
               <NavLink to={"/contact_us"}>contact us</NavLink>
+              <NavLink to={"/join_us"}>join us</NavLink>
               <Setting />
             </div>
           </div>

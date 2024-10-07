@@ -1,9 +1,9 @@
 import React from "react";
 import "./contact.css";
-const Contact = () => {
+const JoinUs = () => {
   return (
     <>
-      <main className=" contact-landing landing-img flex">
+      <main className="contact-landing join landing-img flex">
         <div className="image center flex-direction ">
           <div className="overlay"></div>
 
@@ -71,6 +71,13 @@ const Contact = () => {
               required
             />
           </div>
+
+          <label htmlFor="file" className="inp">
+            <input type="file" id="file" />
+            <i className="fa-solid fa-file"></i>
+            click here to upload your CV
+          </label>
+
           <textarea
             name=""
             id="message"
@@ -84,4 +91,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default JoinUs;
