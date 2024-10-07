@@ -61,3 +61,21 @@ header div.flex-1 a:hover {
 .scroll-to-top:hover {
   background-color: var(--hover-color);
 }
+.scroll-to-top:hover i {
+  animation: scroll-to-top 1.5s infinite;
+}
+
+@keyframes scroll-to-top {
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40%,
+  60% {
+    transform: translateY(5px);
+  }
+}
