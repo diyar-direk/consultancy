@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./contact.css";
 import { Link } from "react-router-dom";
+import { Context } from "../../context/Context";
 const Contact = () => {
+  const context = useContext(Context);
+  const language = context.language && context.language;
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -17,7 +20,7 @@ const Contact = () => {
         <div className="image center flex-direction ">
           <div className="overlay"></div>
 
-          <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+          <h1> {language.contact && language.contact.left_header}</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing
             <br /> elit. Laboriosam, explicabo.

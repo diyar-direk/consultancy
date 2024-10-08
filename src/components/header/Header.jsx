@@ -19,6 +19,9 @@ const Header = () => {
     langDiv && langDiv.classList.remove("active");
     navbar && navbar.classList.remove("active");
   };
+  const context = useContext(Context);
+  const language = context.language && context.language;
+
 
   return (
     <>
@@ -27,11 +30,21 @@ const Header = () => {
           <div className="flex">
             <Logo />
             <div className="center flex flex-1 justify-end">
-              <NavLink to={"/"}>home</NavLink>
-              <NavLink to={"our_services"}>services</NavLink>
-              <NavLink to={"/about_us"}>about us</NavLink>
-              <NavLink to={"/contact_us"}>contact us</NavLink>
-              <NavLink to={"/join_us"}>join us</NavLink>
+              <NavLink to={"/"}>
+                {language.header && language.header.home}
+              </NavLink>
+              <NavLink to={"our_services"}>
+                {language.header && language.header.services}
+              </NavLink>
+              <NavLink to={"/about_us"}>
+                {language.header && language.header.about_us}
+              </NavLink>
+              <NavLink to={"/contact_us"}>
+                {language.header && language.header.contact_us}
+              </NavLink>
+              <NavLink to={"/join_us"}>
+                {language.header && language.header.join_us}
+              </NavLink>
               <Setting position="header" />
               <i
                 onClick={(e) => {
@@ -56,19 +69,24 @@ const Header = () => {
       <nav className="navbar center">
         <div className="container">
           <NavLink to={"/"}>
-            <i className="fa-solid fa-house"></i>home
+            <i className="fa-solid fa-house"></i>
+            {language.header && language.header.home}
           </NavLink>
           <NavLink to={"our_services"}>
-            <i className="fa-solid fa-list-check"></i>services
+            <i className="fa-solid fa-list-check"></i>
+            {language.header && language.header.services}
           </NavLink>
           <NavLink to={"/about_us"}>
-            <i className="fa-solid fa-circle-exclamation"></i> about us
+            <i className="fa-solid fa-circle-exclamation"></i>
+            {language.header && language.header.about_us}
           </NavLink>
           <NavLink to={"/contact_us"}>
-            <i className="fa-solid fa-phone-volume"></i> contact us
+            <i className="fa-solid fa-phone-volume"></i>
+            {language.header && language.header.contact_us}
           </NavLink>
           <NavLink to={"/join_us"}>
-            <i className="fa-solid fa-circle-plus"></i> join us
+            <i className="fa-solid fa-circle-plus"></i>{" "}
+            {language.header && language.header.join_us}
           </NavLink>
           <div className="flex align-center">
             <i

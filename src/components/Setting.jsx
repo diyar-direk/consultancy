@@ -3,7 +3,7 @@ import "./setting.css";
 import { Context } from "../context/Context";
 const Setting = (props) => {
   const context = useContext(Context);
-  const language = context.language;
+  const selectedLang = context.selectedLang;
 
   const clickLang = (e) => {
     e.stopPropagation();
@@ -14,7 +14,7 @@ const Setting = (props) => {
   const clickSpan = (e) => {
     document.querySelector(".language > div span").textContent =
       e.target.textContent;
-    context.setLanguage(e.target.dataset.lang);
+    context.setSelectedLang(e.target.dataset.lang);
     window.localStorage.setItem("language", e.target.dataset.lang);
     e.target.parentNode.classList.remove("active");
   };
@@ -23,12 +23,13 @@ const Setting = (props) => {
     const allLanguages = document.querySelectorAll(".language  .lang-div p");
     allLanguages.forEach((e) => {
       e.classList.remove("active");
-      if (e.dataset.lang === language) {
+      if (e.dataset.lang === selectedLang) {
         e.classList.add("active");
         span.forEach((span) => (span.innerHTML = e.innerHTML));
       }
     });
-  }, [language]);
+  }, [selectedLang]);
+  console.log(selectedLang)
   return (
     <div className="language">
       <div onClick={clickLang}>

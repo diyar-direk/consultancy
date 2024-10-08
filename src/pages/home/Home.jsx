@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import ServicesComp from "../services/ServicesComp";
+import { Context } from "../../context/Context";
 const Home = () => {
+  const context = useContext(Context);
+  const language = context.language && context.language;
   return (
     <>
       <main className="home-landing center relative landing-img ">
@@ -14,17 +17,15 @@ const Home = () => {
           alt=""
         />
         <div className="container center flex-direction ">
-          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            rem optio placeat Consectetur, iusto.
-          </h3>
+          <h1>{language.landing && language.landing.landing_h1}</h1>
+          <h3>{language.landing && language.landing.landing_p}</h3>
           <div className="flex">
             <Link to="/our_services" className="btn">
-              see our services
+              {language.landing && language.landing.button_see_our_services}
             </Link>
             <Link className="btn2" to="/contact_us">
-              get started <i className="fa-solid fa-arrow-up-long"></i>
+              {language.landing && language.landing.button_get_started}
+              <i className="fa-solid fa-arrow-up-long"></i>
             </Link>
           </div>
         </div>
@@ -33,8 +34,13 @@ const Home = () => {
       <main className="home-services section-color center sub-page">
         <div className="container">
           <div className="center title flex-direction">
-            <h1 className="title">our services</h1>
-            <h2> We provide innovative solutions for success. </h2>
+            <h1 className="title">
+              {language.home_services &&
+                language.home_services.home_services_header}
+            </h1>
+            <h2>
+              {language.home_services && language.home_services.home_services_p}
+            </h2>
           </div>
           <div className="grid-3 align-start">
             <ServicesComp>
@@ -45,12 +51,16 @@ const Home = () => {
                   alt=""
                 />
               </ServicesComp.Icon>
-              <ServicesComp.H1>Third-Party Monitoring (TPM).</ServicesComp.H1>
+              <ServicesComp.H1>
+                {" "}
+                {language.home_services && language.home_services.tpm_header}
+              </ServicesComp.H1>
               <ServicesComp.P>
-                Our TPM services offer independent, objective assessments of
-                projects and programs across various sectors.
+                {language.home_services && language.home_services.tpm_p}
               </ServicesComp.P>
-              <ServicesComp.Details />
+              <ServicesComp.Details
+                language={language.home_services && language.home_services}
+              />
             </ServicesComp>
             <ServicesComp>
               <ServicesComp.Icon>
@@ -60,12 +70,16 @@ const Home = () => {
                   alt=""
                 />
               </ServicesComp.Icon>
-              <ServicesComp.H1>Capacity Building & Training.</ServicesComp.H1>
+              <ServicesComp.H1>
+                {language.home_services &&
+                  language.home_services.training_header}
+              </ServicesComp.H1>
               <ServicesComp.P>
-                We offer capacity-building programs tailored to the needs of
-                local NGOs, INGOs, and private organisations.
+                {language.home_services && language.home_services.training_p}
               </ServicesComp.P>
-              <ServicesComp.Details />
+              <ServicesComp.Details
+                language={language.home_services && language.home_services}
+              />
             </ServicesComp>
             <ServicesComp>
               <ServicesComp.Icon>
@@ -76,17 +90,21 @@ const Home = () => {
                 />
               </ServicesComp.Icon>
               <ServicesComp.H1>
-                Evaluations (External & Internal).
+                {language.home_services &&
+                  language.home_services.evaluations_header}
               </ServicesComp.H1>
               <ServicesComp.P>
-                We conduct both external and internal evaluations of projects
-                and programs to assess their relevance, efficiency,
-                effectiveness, sustainability, and impact.
+                {language.home_services && language.home_services.evaluations_p}
               </ServicesComp.P>
-              <ServicesComp.Details />
+              <ServicesComp.Details
+                language={language.home_services && language.home_services}
+              />
             </ServicesComp>
           </div>
-          <Link className="btn2"> explorer our services </Link>
+          <Link className="btn2">
+            {language.home_services &&
+              language.home_services.button_explore_our_services}
+          </Link>
         </div>
       </main>
       <main className="about-home">
@@ -94,44 +112,55 @@ const Home = () => {
           <div className="image"></div>
           <article className="center flex-direction">
             <div className="center title flex-direction">
-              <h1 className="title">About Us</h1>
-              <h2> our goal is to exceed your expectations. </h2>
+              <h1 className="title">
+                {language.home_about && language.home_about.home_about_header}
+              </h1>
+              <h2>
+                {language.home_about && language.home_about.home_about_header_p}
+              </h2>
             </div>
-            <p>
-              At NESCO, we are committed to delivering accurate, reliable, and
-              impactful monitoring, evaluation, and capacity-building services
-              to organisations operating in Northeast Syria. Founded with the
-              mission of supporting humanitarian, development, and private
-              sector actors, our goal is to provide evidence-based insights that
-              guide effective decision-making and promote sustainable outcomes.
-            </p>
+            <p>{language.home_about && language.home_about.home_services_p}</p>
             <div className="flex gap-20">
-              <Link className="btn2"> read more </Link>
-              <Link className="btn"> contact us </Link>
+              <Link className="btn2">
+                {language.home_about && language.home_about.button_read_more}
+              </Link>
+              <Link className="btn">
+                {language.home_about && language.home_about.button_contact_us}
+              </Link>
             </div>
           </article>
         </div>
       </main>
       <main className="sub-page center flex-direction home-team section-color">
         <div className="center title flex-direction">
-          <h1 className="title"> Our Team</h1>
-          <h2> Lorem ipsum dolor sit amet. </h2>
+          <h1 className="title">
+            {language.home_our_team &&
+              language.home_our_team.home_our_team_header}
+          </h1>
+          <h2>
+            {language.home_our_team &&
+              language.home_our_team.home_our_team_header_p}
+          </h2>
         </div>
         <div className="container">
           <div className="grid-2">
             <div className="info">
-              <h2>Meet our team </h2>
+              <h2>
+                {language.home_our_team &&
+                  language.home_our_team.home_our_team_h1}
+              </h2>
               <p>
-                NESCO brings together a team of highly experienced professionals
-                with expertise in monitoring and evaluation, data analysis, and
-                capacity-building across multiple sectors. With a deep
-                understanding of both local and international contexts, we pride
-                ourselves on delivering globally informed, regionally relevant
-                results that help our clients achieve their objectives.
+                {language.home_our_team &&
+                  language.home_our_team.home_our_team_p}
               </p>
-              <h3>Do you want to become one of us?</h3>
+              <h3>
+                {language.home_our_team &&
+                  language.home_our_team.become_one_of_us}
+              </h3>
               <Link to={"/join_us"} className="btn2 d-block en-arrow">
-                join us <i className="fa-solid fa-right-long"></i>
+                {language.home_our_team &&
+                  language.home_our_team.button_join_us}
+                <i className="fa-solid fa-right-long"></i>
               </Link>
             </div>
             <div className="image">
