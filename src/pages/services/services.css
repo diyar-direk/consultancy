@@ -120,7 +120,9 @@
   background-color: var(--main-color);
   color: white;
 }
-
+.services-page aside a:not(.contact) {
+  padding-right: 28px;
+}
 .services-page aside a::after {
   content: "\f061";
   font-family: "Font Awesome 6 Free";
@@ -148,8 +150,55 @@
   .services p {
     font-size: 13px;
   }
+  .services-page aside {
+    flex: 300px;
+  }
+  .services-landing h1 {
+    font-size: 30px;
+  }
+  .services-landing p {
+    max-width: 70%;
+    font-size: 15px;
+  }
+  .services-page .info h1 {
+    font-size: 23px;
+  }
+  .services-page .info p {
+    font-size: 14px;
+  }
+  .services-page aside a {
+    font-size: 11px;
+  }
+  .services-page .info {
+    flex: calc(100% - 330px);
+  }
 }
-
+@media (max-width: 800px) {
+  .services-landing h1 {
+    font-size: 25px;
+  }
+  .services-landing p {
+    max-width: 75%;
+    font-size: 14px;
+  }
+  .services-page .info {
+    flex: 100%;
+  }
+  .services-page aside {
+    display: none;
+  }
+  .services-page .info h1 {
+    font-size: 20px;
+  }
+  .services-page .info h1::before {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+  .services-page .info p {
+    margin-left: 15px;
+  }
+}
 @media (max-width: 460px) {
   .services .icon img {
     width: 60px;
@@ -163,5 +212,18 @@
   }
   .services .details > a {
     font-size: 11px;
+  }
+  .services-landing h1 {
+    font-size: 20px;
+  }
+  .services-landing p {
+    max-width: 100%;
+    font-size: 13px;
+  }
+  .services-page .info h1 {
+    font-size: 17px;
+  }
+  .services-page .info p {
+    font-size: 12px;
   }
 }

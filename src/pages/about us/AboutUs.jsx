@@ -6,14 +6,15 @@ const AboutUs = () => {
   const language = context.language && context.language;
   return (
     <>
-      <main className="center landing-img section-color">
+      <main className="center about-page landing-img section-color">
         <div className="container">
           <div className="about-us grid-2">
             <div className="text flex-direction center">
               <h1>{language.about && language.about.landing_h1}</h1>
               <p>
-              {language.about && language.about.landing_before_span} <span> {language.about && language.about.landing_span}  </span>
-              {language.about && language.about.landing_p}
+                {language.about && language.about.landing_before_span}{" "}
+                <span> {language.about && language.about.landing_span} </span>
+                {language.about && language.about.landing_p}
               </p>
             </div>
             <div className="image">
@@ -43,10 +44,8 @@ const AboutUs = () => {
                 />
 
                 <div className="text">
-                  <h3>  {language.about && language.about.our_mission}</h3>
-                  <p>
-                  {language.about && language.about.our_mission_p}
-                  </p>
+                  <h3> {language.about && language.about.our_mission}</h3>
+                  <p>{language.about && language.about.our_mission_p}</p>
                 </div>
               </div>
               <div className="about-section flex">
@@ -58,9 +57,7 @@ const AboutUs = () => {
 
                 <div className="text">
                   <h3> {language.about && language.about.our_vision}</h3>
-                  <p>
-                  {language.about && language.about.our_vision_p}
-                  </p>
+                  <p>{language.about && language.about.our_vision_p}</p>
                 </div>
               </div>
             </div>
@@ -81,9 +78,7 @@ const AboutUs = () => {
 
               <div className="text">
                 <h3>{language.about && language.about.why_nesco}</h3>
-                <p>
-                {language.about && language.about.why_nesco_p}
-                </p>
+                <p>{language.about && language.about.why_nesco_p}</p>
               </div>
             </div>
           </div>
@@ -97,10 +92,8 @@ const AboutUs = () => {
                 />
 
                 <div className="text">
-                  <h3>   {language.about && language.about.our_approach}</h3>
-                  <p>
-                  {language.about && language.about.our_approach_p}
-                  </p>
+                  <h3> {language.about && language.about.our_approach}</h3>
+                  <p>{language.about && language.about.our_approach_p}</p>
                 </div>
               </div>
             </div>
@@ -114,9 +107,7 @@ const AboutUs = () => {
 
                 <div className="text">
                   <h3>{language.about && language.about.meet_our_team}</h3>
-                  <p>
-                  {language.about && language.about.meet_our_team_p}
-                  </p>
+                  <p>{language.about && language.about.meet_our_team_p}</p>
                 </div>
               </div>
             </div>

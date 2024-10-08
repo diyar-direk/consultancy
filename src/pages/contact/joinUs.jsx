@@ -15,7 +15,7 @@ const JoinUs = () => {
 
   return (
     <>
-      <main className="contact-landing join landing-img flex">
+      <main className="contact-landing join wrap landing-img flex">
         <div className="image center flex-direction ">
           <div className="overlay"></div>
 

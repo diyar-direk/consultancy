@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./services.css";
 const ServicesComp = ({ children }) => {
@@ -17,7 +16,6 @@ ServicesComp.Icon = ({ children }) => {
   return <div className="icon">{children}</div>;
 };
 ServicesComp.Details = ({ language }) => {
-  console.log(language);
   return (
     <div className="flex details column-gap-20">
       <Link to={"/contact_us"} className="btn2 en-arrow">

@@ -115,7 +115,9 @@
 .contact-landing > form label.inp input {
   display: none;
 }
-
+.contact-landing > form .inp + p {
+  margin-right: auto;
+}
 @media (max-width: 1000px) {
   .contact-landing {
     min-height: calc(100vh - 60px) !important;
@@ -136,6 +138,9 @@
   }
   .contact-landing > form .inp input {
     padding: 10px 10px;
+  }
+  .contact-landing > form label.inp {
+    padding: 10px 5px;
   }
   .contact-landing > form .inp i {
     margin: 0px 12px;
@@ -190,6 +195,13 @@
   }
   .contact-landing > form .inp input {
     padding: 8px;
+    font-size: 12px;
+  }
+  .contact-landing > form .inp + p {
+    font-size: 13px;
+  }
+  .contact-landing > form label.inp {
+    padding: 8px 5px;
     font-size: 12px;
   }
   .contact-landing > form .inp i {
