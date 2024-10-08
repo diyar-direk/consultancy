@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./services.css";
 const ServicesComp = ({ children }) => {
@@ -16,16 +16,17 @@ ServicesComp.P = ({ children }) => {
 ServicesComp.Icon = ({ children }) => {
   return <div className="icon">{children}</div>;
 };
-ServicesComp.Details = () => {
+ServicesComp.Details = ({ language }) => {
+  console.log(language)
   return (
     <div className="flex details column-gap-20">
       <Link to={"/contact_us"} className="btn2 en-arrow">
-        get started
+        {language && language.button_get_started}
         <i className="fa-solid fa-angles-right "></i>
       </Link>
 
       <Link to={"/services"} className="btn">
-        read more
+        {language && language.button_read_more}
       </Link>
     </div>
   );

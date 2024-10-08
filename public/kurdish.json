@@ -1,0 +1,100 @@
+{
+  "header": {
+    "home": "",
+    "services": "",
+    "about_us": "",
+    "contact_us": "",
+    "join_us": ""
+  },
+  "landing": {
+    "landing_h1": "",
+    "landing_p": "",
+    "button_see_our_services": "",
+    "button_get_started": ""
+  },
+  "home_services": {
+    "home_services_header": "Xizmetên me",
+    "home_services_p": "",
+    "tpm_header": "Çavdêriya Partiya Sêyem (TPM)",
+    "tpm_p": "Karûbarên me yên TPM-ê di warên cihêreng de nirxandinên serbixwe, objektîf ên proje û bernameyan pêşkêş dikin. Em daneyan rasterast ji zeviyê berhev dikin û analîz dikin, ji xerîdarên xwe agahdariya pêbawer, delîl-based peyda dikin da ku pêşkeftinê bipîvin, lihevhatinê bicîh bikin, û encamên bernameyê zêde bikin. Ma hûn hewceyê verastkirina projeyê an çavdêriya lihevhatinê hewce ne, em têgihîştinên pêbawer pêşkêş dikin ku biryardanek bi bandor dihêlin.",
+    "training_header": "Avakirina Kapasîteyê & Perwerde",
+    "training_p": "Em bernameyên avakirina kapasîteyê pêşkêş dikin ku li gorî hewcedariyên NGOyên herêmî, INGO û rêxistinên taybet têne çêkirin. Atolye û bernameyên me yên perwerdehiyê li ser avakirina jêhatîbûnên di warên wekî rêveberiya projeyê, şopandin û nirxandin, rêbazên berhevkirina daneyan, û raporê de disekine. Ka ew perwerdehiya teknîkî an pîşeyî be, NESCO kes û tîmê bi zanyarî û amûrên ku ew hewce ne ku di çêtirîn xwe de pêk bînin, peyda dike.",
+    "evaluations_header": "Nirxandin (Derveyî & Navxweyî)",
+    "evaluations_p": "Em hem nirxandinên derve û hem jî yên hundurîn ên proje û bernameyan pêk tînin da ku têkildarî, karîgerî, bandor, domdarî û bandora wan binirxînin. Tîma me tevliheviyek ji rêbazên kalîteyî û hejmarî bikar tîne da ku raporên nirxandina berfireh peyda bike ku ji rêxistinan re dibe alîkar ku serkeftin û dijwariyên destpêşxeriyên xwe fam bikin. Nirxandinên me ji bo pêşdebirina bernamesaziya pêşerojê pêşniyarên çalak peyda dikin.",
+    "button_get_started": "",
+    "button_read_more": "",
+    "button_explore_our_services": ""
+  },
+  "home_about": {
+    "home_about_header": "Li ser NESCO",
+    "home_about_header_p": "",
+    "home_services_p": "Li NESCO, em pabend in ku xizmetguzariyên çavdêrî, nirxandin û avakirina kapasîteyê rast, pêbawer û bibandor pêşkêşî rêxistinên ku li Bakur-Rojhilatê Sûriyê kar dikin. Bi mîsyona piştgirîkirina aktorên mirovahî, pêşkeftin û sektora taybet hatî damezrandin, mebesta me ev e ku em têgihîştinên li ser delîlan peyda bikin ku rêberiya biryardana bi bandor dike û encamên domdar pêş dixe.",
+    "button_contact_us": "",
+    "button_read_more": ""
+  },
+  "home_our_team": {
+    "home_our_team_header": "",
+    "home_our_team_header_p": "",
+    "home_our_team_h1": "Tîma me Nasbike",
+    "home_our_team_p": "NESCO tîmek pisporên pir bi tecrûbe yên pispor di çavdêrîkirin û nirxandin, analîzkirina daneyan, û avakirina kapasîteyê de li ser gelek sektoran berhev dike. Bi têgihiştinek kûr hem ji çarçoveyên herêmî û hem jî yên navneteweyî re, em bi pêşkêşkirina encamên têkildar ên gerdûnî yên agahdarkirî, herêmî yên ku ji xerîdarên me re dibin alîkar ku bigihîjin armancên xwe serbilind in.",
+    "become_one_of_us": "",
+    "button_join_us": ""
+  },
+  "services": {
+    "landing_h1": "Xizmetên me",
+    "landing_before_span": "Li",
+    "landing_span": "NESCO",
+    "landing_p": "",
+    "our_services": "Xizmetên me",
+    "our_services_p": "Li NESCO, em gelek xizmetên lihevhatî pêşkêş dikin ku ji bo pêdiviyên rêxistinên ku li Bakur-Rojhilatê Sûriyê dixebitin pêk bînin. Pisporiya me ya di şopandin, nirxandin, avakirina kapasîteyê û şêwirdariyê de alîkariya NGO, NGOyên herêmî, pargîdan û yên din dike ku di hawîrdorên tevlihev de bi bandortir tevbigerin. Her karûbarên me di pabendbûna me de ji bo peydakirina çareseriyên rast, pêbawer, û çarenûsê-taybetî ve girêdayî ye.",
+    "third_party_monitoring": "Çavdêriya Partiya Sêyem (TPM)",
+    "third_party_monitoring_p": "Karûbarên me yên TPM-ê di warên cihêreng de nirxandinên serbixwe, objektîf ên proje û bernameyan pêşkêş dikin. Em daneyan rasterast ji zeviyê berhev dikin û analîz dikin, ji xerîdarên xwe agahdariya pêbawer, delîl-based peyda dikin da ku pêşkeftinê bipîvin, lihevhatinê bicîh bikin, û encamên bernameyê zêde bikin. Ma hûn hewceyê verastkirina projeyê an çavdêriya lihevhatinê hewce ne, em têgihîştinên pêbawer pêşkêş dikin ku biryardanek bi bandor dihêlin.",
+    "evaluations": "Nirxandin (Derveyî & Navxweyî)",
+    "evaluations_p": "Em hem nirxandinên derve û hem jî yên hundurîn ên proje û bernameyan pêk tînin da ku têkildarî, karîgerî, bandor, domdarî û bandora wan binirxînin. Tîma me tevliheviyek ji rêbazên kalîteyî û hejmarî bikar tîne da ku raporên nirxandina berfireh peyda bike ku ji rêxistinan re dibe alîkar ku serkeftin û dijwariyên destpêşxeriyên xwe fam bikin. Nirxandinên me ji bo pêşdebirina bernamesaziya pêşerojê pêşniyarên çalak peyda dikin.",
+    "needs_assessments": "Nirxandinên Pêdiviyan",
+    "needs_assessments_p": "NESCO di pêkanîna nirxandinên hewcedariyê de pispor e ku rê dide rêxistinan ku hewcedariyên civakên ku jê re xizmet dikin baştir fam bikin. Bi karanîna teknîkên berhevkirin û analîzkirina daneya hişk, em valahî û derfetan nas dikin, ji xerîdarên xwe re dibin alîkar ku destwerdanên ku hem têkildar û hem bi bandor in sêwirînin. Nirxandinên me gelek sektoran vedihewîne, di nav de ewlehiya xwarinê, perwerdehî, tenduristî, û av û paqijiyê (WASH).",
+    "capacity_training": "Avakirina Kapasîteyê & Perwerde",
+    "capacity_training_p": "Em bernameyên avakirina kapasîteyê pêşkêş dikin ku li gorî hewcedariyên NGOyên herêmî, INGO û rêxistinên taybet têne çêkirin. Atolye û bernameyên me yên perwerdehiyê li ser avakirina jêhatîbûnên di warên wekî rêveberiya projeyê, şopandin û nirxandin, rêbazên berhevkirina daneyan, û raporê de disekine. Ka ew perwerdehiya teknîkî an pîşeyî be, NESCO kes û tîmê bi zanyarî û amûrên ku ew hewce ne ku di çêtirîn xwe de pêk bînin, peyda dike.",
+    "awarness_campaigns": "Kampanyayên Hişyariyê",
+    "awarness_campaigns_p": "Karûbarên me yên kampanyaya hişyariyê ji rêxistinan re dibe alîkar ku bi temaşevanên xwe re bi bandor ragihînin. Ji perwerdehiya tenduristiyê bigire heya guheztina behremendiya civakî, em kampanyayên ku civakan tevdigerin, hişyariyê bilind dikin, û guhertinên behrê yên erênî dimeşînin sêwirandin û bicîh dikin. Kampanyayên me li ser têgihiştinek kûr a çand û şertên herêmî têne bingeh kirin, ku ew bi temaşevanên armanckirî re têkildar in.",
+    "technical_consulting": "Şêwirmendiya Teknîkî û Îdarî",
+    "technical_consulting_p": "NESCO karûbarên şêwirmendiya pispor peyda dike da ku alîkariya rêxistinan bike ku pirsgirêkên teknîkî û îdarî yên tevlihev rêve bibin. Çi ew stratejiyên nû pêş dixin, karbidestên xebitandinê baştir dikin, an jî pêbendbûna bi daxwazên xêrxwazan re misoger dike, tîmê me li vir e ku bi rêbernameya desta û çareseriyên guncan piştgirî bide rêxistina we.",
+    "button_contact_us": ""
+  },
+  "about": {
+    "landing_h1": "Li ser NESCO",
+    "landing_p": "Li NESCO, em pabend in ku xizmetguzariyên çavdêrî, nirxandin û avakirina kapasîteyê rast, pêbawer û bibandor pêşkêşî rêxistinên ku li Bakur-Rojhilatê Sûriyê kar dikin. Bi mîsyona piştgirîkirina aktorên mirovahî, pêşkeftin û sektora taybet hatî damezrandin, mebesta me ev e ku em têgihîştinên li ser delîlan peyda bikin ku rêberiya biryardana bi bandor dike û encamên domdar pêş dixe.",
+    "our_mission": "Mîsyona me",
+    "our_mission_p": "Mîsyona NESCO ew e ku çavdêrî, nirxandin û şêwirên teknîkî yên bi kalîte ji aliyê sêyem ve pêşkêş bike, bi taybetî li gorî kêşeyên tevlihev ên Bakurê Rojhilatê Sûriyê. Bi berhevkirina zanîna herêmî bi pratîkên çêtirîn ên gerdûnî re, em piştrast dikin ku xerîdarên me agahdariya rast, çarçove-taybet werdigirin da ku bernameyên xwe pêş bixin.",
+    "our_vision": "Dîtina me",
+    "our_vision_p": "Em pêşerojekê xeyal dikin ku rêxistinên ku li herêmên bi nakok kar dikin bigihîjin pisporiya herêmî ya pêbawer û perspektîfên agahdar ên çandî, ku wan bi hêz bike ku biryarên dane-rêveber ên ku jiyan û civakan baştir dikin bidin.",
+    "why_nesco": "Çima NESCO?",
+    "why_nesco_p": "NESCO ku ji berxwedan û girîngiya dîrokî ya bajarê kevnar ê Orkesh îlhama xwe girtiye, di warê şopandin û nirxandinê de wekî sembolek pêbawer û rastbûna roja îroyîn radiweste. Çawa ku Orkesh kevirê bingehîn ê şaristaniya kevnar bû, NESCO ji bo rêxistinên ku li herêmê dane û nerînên berfireh û pêbawer digerin hevkarek pêbawer e. Têgihiştina meya kûr a li ser çarçoweya herêmî û pabendbûna bêkêmasî ya ji rastbûnê re me ji bo rêxistinên ku hewceyê agahdariya rast û çalak in bijarek îdeal dike.",
+    "our_approach": "Nêzîkatiya me",
+    "our_approach_p": "Em bi nêzîkatiyek bi xerîdar, hevkarî bawer dikin, ku hewcedariyên hevkarên xwe di navenda xebata xwe de cîh digirin. Tîma me di pêkanîna nirxandinên serbixwe, analîzên hewcedariyê, û atolyeyên avakirina kapasîteyê de pispor e, ku metodolojiyên pêşkeftî bikar tîne da ku standardên herî bilind ên kalîteyê misoger bike. Armanc, pêbawer, û pisporiya herêmî ya kûr nêzîkatiya me diyar dike, û xerîdarên me ji me bawer dikin ku çareseriyên ku cûdahiyê çêdikin peyda bikin.",
+    "meet_our_team": "Tîma me Nasbike",
+    "meet_our_team_p": "NESCO tîmek pisporên pir bi tecrûbe yên pispor di çavdêrîkirin û nirxandin, analîzkirina daneyan, û avakirina kapasîteyê de li ser gelek sektoran berhev dike. Bi têgihiştinek kûr hem ji çarçoveyên herêmî û hem jî yên navneteweyî re, em bi pêşkêşkirina encamên têkildar ên gerdûnî yên agahdarkirî, herêmî yên ku ji xerîdarên me re dibin alîkar ku bigihîjin armancên xwe serbilind in."
+  },
+  "contact": {
+    "contact_h1": "",
+    "contact_p": "",
+    "please_enter_name": "",
+    "please_enter_phone": "",
+    "please_enter_email": "",
+    "please_enter_message": "",
+    "button_submit": "",
+    "become_one_of_us": "",
+    "join_us": ""
+  },
+  "join_us": {
+    "join_us_h1": "Tevlî me bibin",
+    "join_us_p": "",
+    "please_enter_name": "",
+    "please_enter_phone": "",
+    "please_enter_email": "",
+    "click_here_to_upload_cv": "",
+    "uploaded_file": "",
+    "please_enter_message": "",
+    "button_submit": ""
+  }
+}
