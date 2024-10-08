@@ -21,12 +21,7 @@ const Contact = () => {
           <div className="overlay"></div>
 
           <h1> {language.contact && language.contact.left_header}</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt
-            ipsa! Sapiente tempora voluptatibus asperiores repellat illum
-            voluptatem, libero exercitationem deserunt quas qui veritatis
-            aperiam accusamus aliquid, aliquam assumenda illo?
-          </p>
+          <p>{language.contact && language.contact.left_p}</p>
           <div className="social between">
             <div className="center">
               <i className="fa-solid fa-phone"></i>
@@ -50,11 +45,8 @@ const Contact = () => {
         </div>
         <form className=" center flex-direction gap-20 section-color ">
           <div>
-            <h2>contact us right now</h2>
-            <p>
-              Please complete the form below and the seller will receive your
-              message.
-            </p>
+            <h2>{language.contact && language.contact.contact_h1}</h2>
+            <p>{language.contact && language.contact.contact_p}</p>
           </div>
           <div className="inp ">
             <i className="fa-solid fa-user"></i>
@@ -63,7 +55,9 @@ const Contact = () => {
               type="text"
               name=""
               id="name"
-              placeholder="please write your full name"
+              placeholder={
+                language.contact && language.contact.please_enter_name
+              }
               required
               value={form.name}
             />
@@ -75,7 +69,9 @@ const Contact = () => {
               type="text"
               name=""
               id="phone"
-              placeholder="please write your phone number"
+              placeholder={
+                language.contact && language.contact.please_enter_phone
+              }
               required
               value={form.phone}
             />
@@ -87,7 +83,9 @@ const Contact = () => {
               type="email"
               name=""
               id="email"
-              placeholder="please write your email"
+              placeholder={
+                language.contact && language.contact.please_enter_email
+              }
               required
               value={form.email}
             />
@@ -97,13 +95,19 @@ const Contact = () => {
             name=""
             id="message"
             rows={5}
-            placeholder="please write your message"
+            placeholder={
+              language.contact && language.contact.please_enter_message
+            }
             value={form.message}
           ></textarea>
-          <button className="btn2">submit</button>
+          <button className="btn2">
+            {language.contact && language.contact.button_submit}
+          </button>
           <p className="form-p">
-            Do you want to become one of us?
-            <Link to={"/join_us"}> join us </Link>
+            {language.contact && language.contact.become_one_of_us}
+            <Link to={"/join_us"}>
+              {language.contact && language.contact.join_us}
+            </Link>
           </p>
         </form>
       </main>

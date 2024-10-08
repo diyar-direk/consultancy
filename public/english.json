@@ -4,11 +4,12 @@
     "services": "Services",
     "about_us": "About Us",
     "contact_us": "Contact Us",
-    "join_us": "Join Us"
+    "join_us": "Join Us",
+    "rights_reserved":"© 2024 All rights reserved for Blue Elite Tech."
   },
   "landing": {
-    "landing_h1": "Innovative Solutions for Sustainable Impact",
-    "landing_p": "At NESCO, we provide reliable monitoring, evaluation, and capacity-building services that empower organizations in Northeast Syria. Our team of experts delivers data-driven insights that guide effective decision-making and ensure successful outcomes in complex environments.",
+    "landing_h1": "Welcome to NESCO",
+    "landing_p": "Your Partner in Innovative Consulting Solutions!",
     "button_see_our_services": "See Our Services",
     "button_get_started": "Get Started"
   },
@@ -64,7 +65,7 @@
     "landing_before_span": "At",
 
     "landing_span": "NESCO",
-    "landing_p": "NESCO we are committed to delivering accurate, reliable, and impactful monitoring, evaluation, and capacity-building services to organisations operating in Northeast Syria. Founded with the mission of supporting humanitarian, development, and private sector actors, our goal is to provide evidence-based insights that guide effective decision-making and promote sustainable outcomes.",
+    "landing_p": "we are committed to delivering accurate, reliable, and impactful monitoring, evaluation, and capacity-building services to organisations operating in Northeast Syria. Founded with the mission of supporting humanitarian, development, and private sector actors, our goal is to provide evidence-based insights that guide effective decision-making and promote sustainable outcomes.",
     "our_mission": "Our Mission",
     "our_mission_p": "NESCO’s mission is to offer high-quality third-party monitoring, evaluations, and technical consultations, specifically tailored to the complex challenges of Northeast Syria. By combining local knowledge with global best practices, we ensure our clients receive accurate, context-specific information to drive their programs forward.",
     "our_vision": "Our Vision",
@@ -77,8 +78,8 @@
     "meet_our_team_p": "NESCO brings together a team of highly experienced professionals with expertise in monitoring and evaluation, data analysis, and capacity-building across multiple sectors. With a deep understanding of both local and international contexts, we pride ourselves on delivering globally informed, regionally relevant results that help our clients achieve their objectives."
   },
   "contact": {
-    "left_header": "",
-    "left_p": "",
+    "left_header": "Get in Touch",
+    "left_p": "We are here to assist you with any inquiries.",
     "contact_h1": "Contact Us Right Now",
     "contact_p": "Please complete the form below and the seller will receive your message.",
     "please_enter_name": "Please enter your name",
@@ -86,19 +87,20 @@
     "please_enter_email": "Please enter your email address",
     "please_enter_message": "Please enter your message",
     "button_submit": "Submit",
-    "become_one_of_us": "Do you want to become one of us?",
-    "join_us": "Join Us"
+    "become_one_of_us": "Do you want to become one of us ?",
+    "join_us": "  Join Us"
   },
   "join_us": {
-    "left_header": "",
-    "left_p": "",
+    "left_header": "Job Opportunities",
+    "left_p": "Join our team and be part of our community.",
     "join_us_h1": "Join Us Right Now",
     "join_us_p": "Please complete the form below and the recruiter will receive your message.",
     "please_enter_name": "Please enter your name",
     "please_enter_phone": "Please enter your phone number",
     "please_enter_email": "Please enter your email address",
     "click_here_to_upload_cv": "Click here to upload your CV",
-    "uploaded_file": "Uploaded file",
+    "file_error": "please upload your CV ",
+    "uploaded_file": "Uploaded file :",
     "please_enter_message": "Please enter your message",
     "button_submit": "Submit"
   }

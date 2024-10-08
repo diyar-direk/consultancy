@@ -44,6 +44,11 @@
 .services .details > a i {
   margin-left: 5px;
 }
+body.arabic .services .details > a i {
+  margin-right: 7px;
+  margin-left: 0;
+  rotate: 180deg;
+}
 
 .services-landing {
   background: url(./breadcrumb-5.webp) center no-repeat;
@@ -82,6 +87,10 @@
   background-color: var(--hover-color);
   margin-right: 10px;
 }
+body.arabic .services-page .info h1::before{
+  margin-left: 10px;
+  margin-right: 0px;
+}
 .services-page .info img {
   max-height: 400px;
   width: 100%;
@@ -103,6 +112,9 @@
   position: sticky;
   top: 90px;
   border-radius: 6px;
+}
+body.arabic .services-page aside{
+  direction:ltr ;
 }
 .services-page aside a {
   border-radius: 6px;
@@ -131,16 +143,24 @@
   position: absolute;
   right: 15px;
 }
+
 .services-page aside a.contact {
   background-color: var(--main-color);
   color: white;
   text-align: center;
   font-weight: bold;
 }
+body.arabic .services-page aside a.contact{
+  direction: rtl;
+}
 .services-page aside a.contact::after {
   content: "\f095";
   margin-left: 6px;
   position: static;
+}
+body.arabic .services-page aside a.contact::after{
+  margin-right: 6px;
+  margin-left: 0;
 }
 
 @media (max-width: 1000px) {

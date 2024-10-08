@@ -8,6 +8,13 @@ header {
   top: 0;
   left: 0;
 }
+body.arabic header {
+  direction: ltr;
+}
+body.arabic .nav-links::first-child {
+  order: 2;
+
+}
 header.scroll {
   background-color: #0000004f;
   backdrop-filter: blur(10px);

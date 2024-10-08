@@ -23,7 +23,7 @@ ServicesComp.Details = ({ language }) => {
         <i className="fa-solid fa-angles-right "></i>
       </Link>
 
-      <Link to={"/our_services"} className="btn">
+      <Link to={`/our_services`} className="btn">
         {language && language.button_read_more}
       </Link>
     </div>
