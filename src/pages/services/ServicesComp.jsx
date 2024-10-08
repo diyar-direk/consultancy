@@ -24,7 +24,7 @@ ServicesComp.Details = () => {
         <i className="fa-solid fa-angles-right "></i>
       </Link>
 
-      <Link to={"/services"} className="btn">
+      <Link to={"/our_services"} className="btn">
         read more
       </Link>
     </div>

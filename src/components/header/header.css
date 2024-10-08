@@ -87,6 +87,7 @@ nav.navbar {
   transition: 0.5s;
   padding: 15px 0;
   box-shadow: 0 18px 20px #00000029;
+  backdrop-filter: blur(4px);
 }
 nav.navbar.active {
   max-height: 500px;
@@ -100,6 +101,7 @@ nav.navbar a {
   text-transform: capitalize;
   font-size: 16px;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 nav.navbar a:hover,
 nav.navbar a.active,
@@ -115,7 +117,7 @@ nav.navbar .language {
 }
 nav.navbar .language > article {
   bottom: -98px;
-  background: #00000078;
+  background: #000000bd;
   width: 100px;
   left: -30px;
 }
@@ -161,5 +163,25 @@ nav.navbar .flex i {
   }
   header .logo {
     width: 40px;
+  }
+  .scroll-to-top.active {
+    right: 25px;
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    width: 35px;
+  }
+  nav.navbar a {
+    font-size: 15px;
+  }
+  .scroll-to-top.active {
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
   }
 }

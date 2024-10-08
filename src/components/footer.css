@@ -1,18 +1,85 @@
 footer {
-  background-color: #171717;
+  background-color: #111;
   color: #ddd;
   padding: 20px 0;
+  overflow: hidden;
 }
-footer .grid-2 {
-  margin: 0;
+footer .info h1 {
+  text-transform: capitalize;
 }
-footer .grid-2 > div {
-  justify-content: flex-end;
-  gap: 15px;
+footer .info a {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 4px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-footer .grid-2 > div a {
-  color: #ddd;
+footer .info a.whatsapp:hover {
+  background-color: #25d366;
 }
-footer .grid-2 > div a:hover {
-  color: var(--main-color);
+footer .info a.email:hover {
+  background-color: #d44638;
+}
+footer .info a.location:hover {
+  background-color: #8a0a0a;
+}
+footer .info a:hover i {
+  color: white;
+}
+footer .info .language {
+  margin-left: 0;
+  width: fit-content;
+  margin-top: 10px;
+}
+footer .info .language > article {
+  bottom: 38px;
+  width: 80px;
+  background: #555;
+}
+
+footer .links a {
+  display: block;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+footer .links a:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+footer .links a:hover,
+footer .links a.active {
+  opacity: 1;
+}
+
+footer > .container.center {
+  border-top: solid 1px #2b2a2a;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: #999;
+}
+
+@media (max-width: 675px) {
+  footer .grid-3 {
+    gap: 10px;
+  }
+  footer > .container.center {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  footer .info h1 {
+    font-size: 28px;
+  }
+  footer .links a,
+  footer .info a {
+    font-size: 14px;
+  }
+  footer > .container.center {
+    font-size: 12px;
+  }
 }

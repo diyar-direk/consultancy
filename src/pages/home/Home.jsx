@@ -90,7 +90,7 @@ const Home = () => {
         </div>
       </main>
       <main className="about-home">
-        <div className="flex">
+        <div className="flex wrap">
           <div className="image"></div>
           <article className="center flex-direction">
             <div className="center title flex-direction">

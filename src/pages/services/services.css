@@ -26,12 +26,13 @@
 }
 .services h1 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
 }
 .services p {
   opacity: 0.8;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .services .details > a {
@@ -98,7 +99,7 @@
   gap: 10px;
   flex: 350px;
   padding: 20px 15px;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   position: sticky;
   top: 90px;
   border-radius: 6px;
@@ -138,4 +139,29 @@
   content: "\f095";
   margin-left: 6px;
   position: static;
+}
+
+@media (max-width: 1000px) {
+  .services h1 {
+    font-size: 18px;
+  }
+  .services p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 460px) {
+  .services .icon img {
+    width: 60px;
+    height: 60px;
+  }
+  .services h1 {
+    font-size: 17px;
+  }
+  .services p {
+    font-size: 12px;
+  }
+  .services .details > a {
+    font-size: 11px;
+  }
 }

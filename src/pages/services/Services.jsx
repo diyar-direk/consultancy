@@ -47,7 +47,7 @@ const Services = () => {
         </div>
       </main>
 
-      <main className="center section-color sub-page services-page">
+      <main className="center  sub-page services-page">
         <div className="container">
           <div className="flex wrap align-start">
             <div className="info">
@@ -167,7 +167,10 @@ const Services = () => {
               <a href="#Technical">
                 Technical and Administrative Consultations
               </a>
-              <Link className="contact"> contact us </Link>
+              <Link to={"/contact_us"} className="contact">
+                {" "}
+                contact us{" "}
+              </Link>
             </aside>
           </div>
         </div>

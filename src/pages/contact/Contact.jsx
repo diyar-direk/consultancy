@@ -13,14 +13,16 @@ const Contact = () => {
   }
   return (
     <>
-      <main className=" contact-landing landing-img flex">
+      <main className=" contact-landing wrap landing-img flex">
         <div className="image center flex-direction ">
           <div className="overlay"></div>
 
           <h1>Lorem ipsum dolor sit amet consectetur.</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing
-            <br /> elit. Laboriosam, explicabo.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt
+            ipsa! Sapiente tempora voluptatibus asperiores repellat illum
+            voluptatem, libero exercitationem deserunt quas qui veritatis
+            aperiam accusamus aliquid, aliquam assumenda illo?
           </p>
           <div className="social between">
             <div className="center">
