@@ -34,6 +34,10 @@ main.home-landing .flex {
 }
 main.home-landing .flex a i {
   rotate: 45deg;
+  padding: 0px 6px;
+}
+body.arabic main.home-landing .flex a i {
+  rotate: -45deg;
 }
 .home-services .grid-3 {
   margin-top: 50px;
@@ -72,7 +76,23 @@ main.home-landing .flex a i {
 .home-team .grid-2 img {
   border-radius: 20px;
 }
+body.arabic .about-home{
+  direction: ltr;
+}
+body.arabic .home-team{
+  direction: ltr;
+}
+body.arabic .home-team .info{
+  direction: rtl;
+}
+body.arabic .about-home > div > article{
+  direction: rtl;
+}
+body.arabic .home-team .grid-2 .info a i {
+  rotate: 180deg;
+  margin-right: 5px;
 
+}
 @media (max-width: 1000px) {
   main.home-landing h1 {
     font-size: 25px;

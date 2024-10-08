@@ -29,7 +29,7 @@ const Header = () => {
         <div className="container">
           <div className="flex">
             <Logo />
-            <div className="center flex flex-1 justify-end">
+            <div className="center flex flex-1 justify-end nav-links">
               <NavLink to={"/"}>
                 {language.header && language.header.home}
               </NavLink>
