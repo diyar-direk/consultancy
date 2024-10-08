@@ -17,7 +17,6 @@ ServicesComp.Icon = ({ children }) => {
   return <div className="icon">{children}</div>;
 };
 ServicesComp.Details = ({ language }) => {
-  console.log(language);
   return (
     <div className="flex details column-gap-20">
       <Link to={"/contact_us"} className="btn2 en-arrow">
@@ -25,7 +24,7 @@ ServicesComp.Details = ({ language }) => {
         <i className="fa-solid fa-angles-right "></i>
       </Link>
 
-      <Link to={"/our_services"} className="btn">
+      <Link to={`/our_services`} className="btn">
         {language && language.button_read_more}
       </Link>
     </div>

@@ -68,6 +68,11 @@
   width: 64px;
   margin-right: 30px;
 }
+body.arabic .about-sections .about-section img{
+  margin-right:  0px;
+  margin-left: 30px;
+
+}
 
 .about-sections .about-section .text h3 {
   margin: 0;

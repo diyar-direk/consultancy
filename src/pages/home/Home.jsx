@@ -101,7 +101,7 @@ const Home = () => {
               />
             </ServicesComp>
           </div>
-          <Link className="btn2">
+          <Link to={`our_services`} className="btn2">
             {language.home_services &&
               language.home_services.button_explore_our_services}
           </Link>
@@ -121,10 +121,10 @@ const Home = () => {
             </div>
             <p>{language.home_about && language.home_about.home_services_p}</p>
             <div className="flex gap-20">
-              <Link className="btn2">
+              <Link to={`about_us`} className="btn2">
                 {language.home_about && language.home_about.button_read_more}
               </Link>
-              <Link className="btn">
+              <Link to={`contact_us`} className="btn">
                 {language.home_about && language.home_about.button_contact_us}
               </Link>
             </div>
