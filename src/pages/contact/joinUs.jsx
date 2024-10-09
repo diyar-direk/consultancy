@@ -3,12 +3,22 @@ import "./contact.css";
 import { Context } from "../../context/Context";
 import FormLoading from "./FormLoading";
 import ReCAPTCHA from "react-google-recaptcha";
+import axios from "axios";
 
 const JoinUs = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
   const [capVal, setCapVal] = useState(null);
-
+  const [errorData, setErrorData] = useState(false);
+  function overlay() {
+    setErrorData(true);
+    window.onclick = () => {
+      setErrorData(false);
+    };
+    setTimeout(() => {
+      setErrorData(false);
+    }, 2000);
+  }
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -33,9 +43,11 @@ const JoinUs = () => {
         formData.append("email", form.email);
         formData.append("message", form.message);
         formData.append("file", file);
+        await axios.post("dasdas");
         window.location.reload();
       } catch (error) {
         console.log(error);
+        overlay();
       } finally {
         setLoading(false);
       }
@@ -44,6 +56,12 @@ const JoinUs = () => {
   return (
     <>
       <main className="contact-landing join wrap landing-img flex">
+        {errorData && (
+          <div className="error-send flex">
+            <h1>{language.contact && language.join_us.error}</h1>
+            <img src={require("./error.png")} alt="" />
+          </div>
+        )}
         <div className="image center flex-direction ">
           <div className="overlay"></div>
 

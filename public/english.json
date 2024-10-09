@@ -88,7 +88,8 @@
     "please_enter_message": "Please enter your message",
     "button_submit": "Submit",
     "become_one_of_us": "Do you want to become one of us ?",
-    "join_us": "  Join Us"
+    "join_us": "  Join Us",
+    "error":"failed to send email try again letter"
   },
   "join_us": {
     "left_header": "Job Opportunities",
@@ -102,6 +103,7 @@
     "file_error": "please upload your CV ",
     "uploaded_file": "Uploaded file :",
     "please_enter_message": "Please enter your message",
-    "button_submit": "Submit"
+    "button_submit": "Submit",
+    "error":"failed to send email try again later"
   }
 }

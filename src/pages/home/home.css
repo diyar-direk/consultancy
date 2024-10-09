@@ -216,6 +216,16 @@ body.arabic .home-team .grid-2 .info a i {
   .home-team .grid-2 .info a {
     width: 125px;
   }
+  .rc-anchor-normal .rc-anchor-pt {
+    margin-right: 33px !important;
+  }
+  .captcha iframe {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -224,9 +234,8 @@ body.arabic .home-team .grid-2 .info a i {
     width: 100%;
     margin-right: 33px;
   }
-  body.arabic .captcha{
+  body.arabic .captcha {
     margin-left: 33px;
-
   }
   .captcha div {
     left: 0 !important;

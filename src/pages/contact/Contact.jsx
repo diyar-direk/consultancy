@@ -4,17 +4,27 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import FormLoading from "./FormLoading";
 import ReCAPTCHA from "react-google-recaptcha";
+import axios from "axios";
 
 const Contact = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
   const [capVal, setCapVal] = useState(null);
-
+  const [errorData, setErrorData] = useState(false);
+  function overlay() {
+    setErrorData(true);
+    window.onclick = () => {
+      setErrorData(false);
+    };
+    setTimeout(() => {
+      setErrorData(false);
+    }, 2000);
+  }
   const [form, setForm] = useState({
     name: "",
     phone: "",
     email: "",
-    message: ""
+    message: "",
   });
   const [loading, setLoading] = useState(false);
   function handleForm(e) {
@@ -23,9 +33,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      await axios.post("dass");
       window.location.reload();
     } catch (error) {
       console.log(error);
+      overlay();
     } finally {
       setLoading(false);
     }
@@ -34,7 +46,14 @@ const Contact = () => {
   //ceo@nesconsultancy.org
   return (
     <>
-      <main className=" contact-landing wrap landing-img flex">
+      <main className="relative contact-landing wrap landing-img flex">
+        {errorData && (
+          <div className="error-send flex">
+            <h1>{language.contact && language.contact.error}</h1>
+            <img src={require("./error.png")} alt="" />
+          </div>
+        )}
+
         <div className="image center flex-direction ">
           <div className="overlay"></div>
 
@@ -61,7 +80,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className="relative center flex-direction gap-20 section-color ">
+        <form
+          onSubmit={handleSubmit}
+          className="relative center flex-direction gap-20 section-color "
+        >
           {loading && <FormLoading />}
           <div>
             <h2>{language.contact && language.contact.contact_h1}</h2>
@@ -126,7 +148,7 @@ const Contact = () => {
             }
             value={form.message}
           ></textarea>
-          <button className="btn2">
+          <button disabled={!capVal} className="btn2">
             {language.contact && language.contact.button_submit}
           </button>
           <p className="form-p">
