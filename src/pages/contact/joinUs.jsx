@@ -1,9 +1,13 @@
 import React, { useContext, useState } from "react";
 import "./contact.css";
 import { Context } from "../../context/Context";
+import ReCAPTCHA from "react-google-recaptcha";
+
 const JoinUs = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
+  const [capVal, setCapVal] = useState(null);
+
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -23,9 +27,7 @@ const JoinUs = () => {
           <div className="overlay"></div>
 
           <h1>{language.join_us && language.join_us.left_header}</h1>
-          <p>
-          {language.join_us && language.join_us.left_p}
-          </p>
+          <p>{language.join_us && language.join_us.left_p}</p>
           <div className="social between">
             <div className="center">
               <i className="fa-solid fa-phone"></i>
@@ -49,10 +51,8 @@ const JoinUs = () => {
         </div>
         <form className=" center flex-direction gap-20 section-color ">
           <div>
-            <h2>       {language.join_us && language.join_us.join_us_h1}</h2>
-            <p>
-            {language.join_us && language.join_us.join_us_p}
-            </p>
+            <h2> {language.join_us && language.join_us.join_us_h1}</h2>
+            <p>{language.join_us && language.join_us.join_us_p}</p>
           </div>
           <div className="inp ">
             <i className="fa-solid fa-user"></i>
@@ -61,7 +61,9 @@ const JoinUs = () => {
               type="text"
               name=""
               id="name"
-              placeholder= {language.join_us && language.join_us.please_enter_name}
+              placeholder={
+                language.join_us && language.join_us.please_enter_name
+              }
               required
               value={form.name}
             />
@@ -73,7 +75,9 @@ const JoinUs = () => {
               type="text"
               name=""
               id="phone"
-              placeholder={language.join_us && language.join_us.please_enter_phone}
+              placeholder={
+                language.join_us && language.join_us.please_enter_phone
+              }
               required
               value={form.phone}
             />
@@ -85,7 +89,9 @@ const JoinUs = () => {
               type="email"
               name=""
               id="email"
-              placeholder={language.join_us && language.join_us.please_enter_email}
+              placeholder={
+                language.join_us && language.join_us.please_enter_email
+              }
               required
               value={form.email}
             />
@@ -116,17 +122,35 @@ const JoinUs = () => {
             <i className="fa-solid fa-file"></i>
             {language.join_us && language.join_us.click_here_to_upload_cv}
           </label>
-          {fileErr && <p className="text-error">{language.join_us && language.join_us.file_error} </p>}
-          {file && <p>{language.join_us && language.join_us.uploaded_file} {file.name} </p>}
+          {fileErr && (
+            <p className="text-error">
+              {language.join_us && language.join_us.file_error}{" "}
+            </p>
+          )}
+          {file && (
+            <p>
+              {language.join_us && language.join_us.uploaded_file} {file.name}{" "}
+            </p>
+          )}
+          <div className="captcha">
+            <ReCAPTCHA
+              sitekey="6LfTO1wqAAAAAAb6iFWdcF2G84_nuCWLpFg2aDZY"
+              onChange={(val) => setCapVal(val)}
+            />
+          </div>
           <textarea
             onInput={handleForm}
             name=""
             id="message"
             rows={5}
-            placeholder={language.join_us && language.join_us.please_enter_message}
+            placeholder={
+              language.join_us && language.join_us.please_enter_message
+            }
             value={form.message}
           ></textarea>
-          <button className="btn2">{language.join_us && language.join_us.button_submit}</button>
+          <button className="btn2">
+            {language.join_us && language.join_us.button_submit}
+          </button>
         </form>
       </main>
     </>
