@@ -33,6 +33,10 @@
   margin-right: 5px;
   opacity: 0.6;
 }
+body.arabic .contact-landing .image .social i {
+  margin-right: 0px;
+  margin-left: 5px;
+}
 .contact-landing .image .social a {
   font-size: 13px;
   color: #eee;
@@ -44,6 +48,7 @@
 
 .contact-landing > form {
   padding: 20px 40px;
+  position: relative;
   flex: 50%;
 }
 .contact-landing > form > div > h2 {

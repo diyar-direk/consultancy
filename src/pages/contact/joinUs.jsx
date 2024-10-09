@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./contact.css";
 import { Context } from "../../context/Context";
+import FormLoading from "./FormLoading";
 const JoinUs = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
@@ -15,7 +16,27 @@ const JoinUs = () => {
   }
   const [file, setFile] = useState(false);
   const [fileErr, setFileErr] = useState(false);
-
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!file) {
+      setFileErr(true);
+    } else {
+      try {
+        const formData = new FormData();
+        formData.append("name", form.name);
+        formData.append("phone", form.phone);
+        formData.append("email", form.email);
+        formData.append("message", form.message);
+        formData.append("file", file);
+        window.location.reload();
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
+    }
+  };
   return (
     <>
       <main className="contact-landing join wrap landing-img flex">
@@ -23,9 +44,7 @@ const JoinUs = () => {
           <div className="overlay"></div>
 
           <h1>{language.join_us && language.join_us.left_header}</h1>
-          <p>
-          {language.join_us && language.join_us.left_p}
-          </p>
+          <p>{language.join_us && language.join_us.left_p}</p>
           <div className="social between">
             <div className="center">
               <i className="fa-solid fa-phone"></i>
@@ -47,12 +66,14 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <form className=" center flex-direction gap-20 section-color ">
+        <form
+          onSubmit={handleSubmit}
+          className="center flex-direction gap-20 section-color"
+        >
+          {loading && <FormLoading />}
           <div>
-            <h2>       {language.join_us && language.join_us.join_us_h1}</h2>
-            <p>
-            {language.join_us && language.join_us.join_us_p}
-            </p>
+            <h2> {language.join_us && language.join_us.join_us_h1}</h2>
+            <p>{language.join_us && language.join_us.join_us_p}</p>
           </div>
           <div className="inp ">
             <i className="fa-solid fa-user"></i>
@@ -61,7 +82,9 @@ const JoinUs = () => {
               type="text"
               name=""
               id="name"
-              placeholder= {language.join_us && language.join_us.please_enter_name}
+              placeholder={
+                language.join_us && language.join_us.please_enter_name
+              }
               required
               value={form.name}
             />
@@ -73,7 +96,9 @@ const JoinUs = () => {
               type="text"
               name=""
               id="phone"
-              placeholder={language.join_us && language.join_us.please_enter_phone}
+              placeholder={
+                language.join_us && language.join_us.please_enter_phone
+              }
               required
               value={form.phone}
             />
@@ -85,7 +110,9 @@ const JoinUs = () => {
               type="email"
               name=""
               id="email"
-              placeholder={language.join_us && language.join_us.please_enter_email}
+              placeholder={
+                language.join_us && language.join_us.please_enter_email
+              }
               required
               value={form.email}
             />
@@ -116,17 +143,29 @@ const JoinUs = () => {
             <i className="fa-solid fa-file"></i>
             {language.join_us && language.join_us.click_here_to_upload_cv}
           </label>
-          {fileErr && <p className="text-error">{language.join_us && language.join_us.file_error} </p>}
-          {file && <p>{language.join_us && language.join_us.uploaded_file} {file.name} </p>}
+          {fileErr && (
+            <p className="error-text">
+              {language.join_us && language.join_us.file_error}
+            </p>
+          )}
+          {file && (
+            <p>
+              {language.join_us && language.join_us.uploaded_file} {file.name}
+            </p>
+          )}
           <textarea
             onInput={handleForm}
             name=""
             id="message"
             rows={5}
-            placeholder={language.join_us && language.join_us.please_enter_message}
+            placeholder={
+              language.join_us && language.join_us.please_enter_message
+            }
             value={form.message}
           ></textarea>
-          <button className="btn2">{language.join_us && language.join_us.button_submit}</button>
+          <button className="btn2">
+            {language.join_us && language.join_us.button_submit}
+          </button>
         </form>
       </main>
     </>

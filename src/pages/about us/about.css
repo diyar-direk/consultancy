@@ -72,10 +72,9 @@ main.about-page .grid-2 {
   width: 64px;
   margin-right: 20px;
 }
-body.arabic .about-sections .about-section img{
-  margin-right:  0px;
-  margin-left: 30px;
-
+body.arabic .about-sections .about-section img {
+  margin-right: 0px;
+  margin-left: 20px;
 }
 
 .about-sections .about-section .text h3 {
@@ -162,6 +161,9 @@ main.section-color .dots-up {
   .about-sections .about-section {
     flex-direction: column;
     padding: 20px 16px;
+  }
+  body.arabic .about-sections .about-section img {
+    margin-left: 0;
   }
   .about-sections .about-section img {
     margin: 10px 0;

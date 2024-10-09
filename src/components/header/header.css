@@ -11,9 +11,9 @@ header {
 body.arabic header {
   direction: ltr;
 }
-body.arabic .nav-links::first-child {
-  order: 2;
-
+body.arabic header div.flex-1 a:first-child,
+body.arabic header .language {
+  order: 1;
 }
 header.scroll {
   background-color: #0000004f;
@@ -118,6 +118,11 @@ nav.navbar a:hover i {
 nav.navbar a i {
   margin-right: 10px;
 }
+
+body.arabic nav.navbar a i {
+  margin-right: 0px;
+  margin-left: 10px;
+}
 nav.navbar .language {
   margin: 0;
   color: white;
@@ -132,6 +137,10 @@ nav.navbar .flex i {
   color: white;
   cursor: pointer;
   margin-right: 10px;
+}
+body.arabic nav.navbar .flex > i {
+  margin-right: 0px;
+  margin-left: 10px;
 }
 @keyframes scroll-to-top {
   0%,

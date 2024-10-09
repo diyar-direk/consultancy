@@ -9,6 +9,9 @@
 .language > div i {
   margin-left: 5px;
 }
+body.arabic .language > div i {
+  margin-right: 5px;
+}
 .language > article {
   position: absolute;
   bottom: -95px;

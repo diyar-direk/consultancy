@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./contact.css";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
+import FormLoading from "./FormLoading";
 const Contact = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
@@ -11,9 +12,20 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
   function handleForm(e) {
     setForm({ ...form, [e.target.id]: e.target.value });
   }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      window.location.reload();
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <>
       <main className=" contact-landing wrap landing-img flex">
@@ -43,7 +55,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className=" center flex-direction gap-20 section-color ">
+        <form className="relative center flex-direction gap-20 section-color ">
+          {loading && <FormLoading />}
           <div>
             <h2>{language.contact && language.contact.contact_h1}</h2>
             <p>{language.contact && language.contact.contact_p}</p>
@@ -95,6 +108,7 @@ const Contact = () => {
             name=""
             id="message"
             rows={5}
+            required
             placeholder={
               language.contact && language.contact.please_enter_message
             }

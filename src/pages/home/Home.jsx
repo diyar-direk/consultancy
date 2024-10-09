@@ -52,7 +52,6 @@ const Home = () => {
                 />
               </ServicesComp.Icon>
               <ServicesComp.H1>
-                {" "}
                 {language.home_services && language.home_services.tpm_header}
               </ServicesComp.H1>
               <ServicesComp.P>

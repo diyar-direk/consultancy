@@ -87,7 +87,7 @@ body.arabic .services .details > a i {
   background-color: var(--hover-color);
   margin-right: 10px;
 }
-body.arabic .services-page .info h1::before{
+body.arabic .services-page .info h1::before {
   margin-left: 10px;
   margin-right: 0px;
 }
@@ -102,6 +102,10 @@ body.arabic .services-page .info h1::before{
   margin-bottom: 20px;
   margin-left: 20px;
 }
+body.arabic .services-page .info p {
+  margin-left: 0px;
+  margin-right: 20px;
+}
 .services-page aside {
   display: flex;
   flex-direction: column;
@@ -113,8 +117,8 @@ body.arabic .services-page .info h1::before{
   top: 90px;
   border-radius: 6px;
 }
-body.arabic .services-page aside{
-  direction:ltr ;
+body.arabic .services-page aside {
+  direction: ltr;
 }
 .services-page aside a {
   border-radius: 6px;
@@ -150,7 +154,7 @@ body.arabic .services-page aside{
   text-align: center;
   font-weight: bold;
 }
-body.arabic .services-page aside a.contact{
+body.arabic .services-page aside a.contact {
   direction: rtl;
 }
 .services-page aside a.contact::after {
@@ -158,7 +162,7 @@ body.arabic .services-page aside a.contact{
   margin-left: 6px;
   position: static;
 }
-body.arabic .services-page aside a.contact::after{
+body.arabic .services-page aside a.contact::after {
   margin-right: 6px;
   margin-left: 0;
 }
@@ -215,8 +219,14 @@ body.arabic .services-page aside a.contact::after{
     height: 8px;
     margin-right: 5px;
   }
+  body.arabic .services-page .info h1::before {
+    margin-left: 5px;
+  }
   .services-page .info p {
     margin-left: 15px;
+  }
+  body.arabic .services-page .info p {
+    margin-right: 15px;
   }
 }
 @media (max-width: 460px) {
@@ -245,5 +255,9 @@ body.arabic .services-page aside a.contact::after{
   }
   .services-page .info p {
     font-size: 12px;
+  }
+  .services-page .info h1::before {
+    width: 6px;
+    height: 6px;
   }
 }
