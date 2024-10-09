@@ -138,13 +138,17 @@ div.error-send {
   border-bottom-right-radius: 4px;
   box-shadow: 0px 3px 6px #77777747;
 }
+body.arabic div.error-send {
+  flex-direction: row-reverse;
+}
 div.error-send h1 {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
+  white-space: nowrap;
   text-transform: capitalize;
 }
 div.error-send img {
-  width: 30px;
+  width: 25px;
   margin: 0 5px;
 }
 @media (max-width: 1000px) {
@@ -199,6 +203,9 @@ div.error-send img {
   .contact-landing {
     min-height: calc(100vh - 55px) !important;
   }
+  div.error-send h1 {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -236,5 +243,11 @@ div.error-send img {
   .contact-landing > form .inp i {
     margin: 0px 10px;
     font-size: 13px;
+  }
+  div.error-send img {
+    width: 20px;
+  }
+  div.error-send h1 {
+    font-size: 12px;
   }
 }

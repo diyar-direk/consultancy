@@ -18,7 +18,7 @@ const Contact = () => {
     };
     setTimeout(() => {
       setErrorData(false);
-    }, 2000);
+    }, 3000);
   }
   const [form, setForm] = useState({
     name: "",

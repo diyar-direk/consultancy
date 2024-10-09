@@ -160,7 +160,7 @@ body.arabic nav.navbar .flex > i {
 @media (max-width: 1000px) {
   header div.flex-1 a,
   .language {
-    font-size: 15px;
+    font-size: 14px;
   }
   header {
     height: 60px;

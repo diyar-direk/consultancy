@@ -17,7 +17,7 @@ const JoinUs = () => {
     };
     setTimeout(() => {
       setErrorData(false);
-    }, 2000);
+    }, 3000);
   }
   const [form, setForm] = useState({
     name: "",
@@ -191,7 +191,7 @@ const JoinUs = () => {
             }
             value={form.message}
           ></textarea>
-          <button className="btn2">
+          <button disabled={!capVal} className="btn2">
             {language.join_us && language.join_us.button_submit}
           </button>
         </form>
