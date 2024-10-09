@@ -14,6 +14,8 @@ const Contact = () => {
   function handleForm(e) {
     setForm({ ...form, [e.target.id]: e.target.value });
   }
+  //nescoprovider@gmail.com
+  //ceo@nesconsultancy.org  
   return (
     <>
       <main className=" contact-landing wrap landing-img flex">

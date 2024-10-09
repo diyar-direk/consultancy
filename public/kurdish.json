@@ -77,6 +77,8 @@
     "meet_our_team_p": "NESCO tîmek pisporên pir bi tecrûbe yên pispor di çavdêrîkirin û nirxandin, analîzkirina daneyan, û avakirina kapasîteyê de li ser gelek sektoran berhev dike. Bi têgihiştinek kûr hem ji çarçoveyên herêmî û hem jî yên navneteweyî re, em bi pêşkêşkirina encamên têkildar ên gerdûnî yên agahdarkirî, herêmî yên ku ji xerîdarên me re dibin alîkar ku bigihîjin armancên xwe serbilind in."
   },
   "contact": {
+    "left_header": "Têkilî bike",
+    "left_p": "Em li vir in ku ji we re bi her lêpirsînan re bibin alîkar.",
     "contact_h1": "Pêwendî Bike",
     "contact_p": "Pirsa te heye? Bi me re têkilî daynin û em ê di demek nêz de bersivê bidin",
     "please_enter_name": "Ji kerema xwe navê xwe binivîse",
@@ -88,6 +90,8 @@
     "join_us": "tevlî me bibin"
   },
   "join_us": {
+    "left_header": "Derfetên Kar",
+    "left_p": "Tevlî tîmê me bibin û bibin beşek ji civata me",
     "join_us_h1": "Tevlî me bibin",
     "join_us_p": "Tevlî tîmê me bibin û bibin beşek ji civata me",
     "please_enter_name": "Ji kerema xwe navê xwe binivîse",
