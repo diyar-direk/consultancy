@@ -3,14 +3,18 @@ import "./contact.css";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import FormLoading from "./FormLoading";
+import ReCAPTCHA from "react-google-recaptcha";
+
 const Contact = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
+  const [capVal, setCapVal] = useState(null);
+
   const [form, setForm] = useState({
     name: "",
     phone: "",
     email: "",
-    message: "",
+    message: ""
   });
   const [loading, setLoading] = useState(false);
   function handleForm(e) {
@@ -26,6 +30,8 @@ const Contact = () => {
       setLoading(false);
     }
   };
+  //nescoprovider@gmail.com
+  //ceo@nesconsultancy.org
   return (
     <>
       <main className=" contact-landing wrap landing-img flex">
@@ -101,6 +107,12 @@ const Contact = () => {
               }
               required
               value={form.email}
+            />
+          </div>
+          <div className="captcha">
+            <ReCAPTCHA
+              sitekey="6LfTO1wqAAAAAAb6iFWdcF2G84_nuCWLpFg2aDZY"
+              onChange={(val) => setCapVal(val)}
             />
           </div>
           <textarea

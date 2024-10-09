@@ -2,9 +2,13 @@ import React, { useContext, useState } from "react";
 import "./contact.css";
 import { Context } from "../../context/Context";
 import FormLoading from "./FormLoading";
+import ReCAPTCHA from "react-google-recaptcha";
+
 const JoinUs = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
+  const [capVal, setCapVal] = useState(null);
+
   const [form, setForm] = useState({
     name: "",
     phone: "",
@@ -153,6 +157,12 @@ const JoinUs = () => {
               {language.join_us && language.join_us.uploaded_file} {file.name}
             </p>
           )}
+          <div className="captcha">
+            <ReCAPTCHA
+              sitekey="6LfTO1wqAAAAAAb6iFWdcF2G84_nuCWLpFg2aDZY"
+              onChange={(val) => setCapVal(val)}
+            />
+          </div>
           <textarea
             onInput={handleForm}
             name=""
