@@ -1,49 +1,49 @@
 {
   "header": {
-    "home": "",
-    "services": "",
-    "about_us": "",
-    "contact_us": "",
-    "join_us": ""
+    "home": "Rûplea Sereke",
+    "services": "Xizmetên Me",
+    "about_us": "Di Derbarê Me",
+    "contact_us": "Pêwendî Bike",
+    "join_us": "Tevlî Me Bibe"
   },
   "landing": {
-    "landing_h1": "",
-    "landing_p": "",
-    "button_see_our_services": "",
-    "button_get_started": ""
+    "landing_h1": "Bi Xêr Hatî NESCO",
+    "landing_p": "Hevkarê we di çareseriyên şêwirmendiya nûjen de",
+    "button_see_our_services": "Karûbarên me binirxînin",
+    "button_get_started": "Niha dest pê bike"
   },
   "home_services": {
     "home_services_header": "Xizmetên me",
-    "home_services_p": "",
+    "home_services_p": "Em çareseriyên nûjen pêşkêş dikin ku bigihîjin serkeftinê",
     "tpm_header": "Çavdêriya Partiya Sêyem (TPM)",
     "tpm_p": "Karûbarên me yên TPM-ê di warên cihêreng de nirxandinên serbixwe, objektîf ên proje û bernameyan pêşkêş dikin. Em daneyan rasterast ji zeviyê berhev dikin û analîz dikin, ji xerîdarên xwe agahdariya pêbawer, delîl-based peyda dikin da ku pêşkeftinê bipîvin, lihevhatinê bicîh bikin, û encamên bernameyê zêde bikin. Ma hûn hewceyê verastkirina projeyê an çavdêriya lihevhatinê hewce ne, em têgihîştinên pêbawer pêşkêş dikin ku biryardanek bi bandor dihêlin.",
     "training_header": "Avakirina Kapasîteyê & Perwerde",
     "training_p": "Em bernameyên avakirina kapasîteyê pêşkêş dikin ku li gorî hewcedariyên NGOyên herêmî, INGO û rêxistinên taybet têne çêkirin. Atolye û bernameyên me yên perwerdehiyê li ser avakirina jêhatîbûnên di warên wekî rêveberiya projeyê, şopandin û nirxandin, rêbazên berhevkirina daneyan, û raporê de disekine. Ka ew perwerdehiya teknîkî an pîşeyî be, NESCO kes û tîmê bi zanyarî û amûrên ku ew hewce ne ku di çêtirîn xwe de pêk bînin, peyda dike.",
     "evaluations_header": "Nirxandin (Derveyî & Navxweyî)",
     "evaluations_p": "Em hem nirxandinên derve û hem jî yên hundurîn ên proje û bernameyan pêk tînin da ku têkildarî, karîgerî, bandor, domdarî û bandora wan binirxînin. Tîma me tevliheviyek ji rêbazên kalîteyî û hejmarî bikar tîne da ku raporên nirxandina berfireh peyda bike ku ji rêxistinan re dibe alîkar ku serkeftin û dijwariyên destpêşxeriyên xwe fam bikin. Nirxandinên me ji bo pêşdebirina bernamesaziya pêşerojê pêşniyarên çalak peyda dikin.",
-    "button_get_started": "",
-    "button_read_more": "",
-    "button_explore_our_services": ""
+    "button_get_started": "Niha dest pê bike",
+    "button_read_more": "Zêdetir Bixwîne",
+    "button_explore_our_services": "Xizmetên me binere"
   },
   "home_about": {
     "home_about_header": "Li ser NESCO",
-    "home_about_header_p": "",
+    "home_about_header_p": "Armanca me ew e ku em ji hêviyên we zêdetir pêkbînin",
     "home_services_p": "Li NESCO, em pabend in ku xizmetguzariyên çavdêrî, nirxandin û avakirina kapasîteyê rast, pêbawer û bibandor pêşkêşî rêxistinên ku li Bakur-Rojhilatê Sûriyê kar dikin. Bi mîsyona piştgirîkirina aktorên mirovahî, pêşkeftin û sektora taybet hatî damezrandin, mebesta me ev e ku em têgihîştinên li ser delîlan peyda bikin ku rêberiya biryardana bi bandor dike û encamên domdar pêş dixe.",
-    "button_contact_us": "",
-    "button_read_more": ""
+    "button_contact_us": "Pêwendî Bike",
+    "button_read_more": "Zêdetir Bixwîne"
   },
   "home_our_team": {
-    "home_our_team_header": "",
-    "home_our_team_header_p": "",
+    "home_our_team_header": "Tîma me",
+    "home_our_team_header_p": "Komek pisporên pir bi tecrube",
     "home_our_team_h1": "Tîma me Nasbike",
     "home_our_team_p": "NESCO tîmek pisporên pir bi tecrûbe yên pispor di çavdêrîkirin û nirxandin, analîzkirina daneyan, û avakirina kapasîteyê de li ser gelek sektoran berhev dike. Bi têgihiştinek kûr hem ji çarçoveyên herêmî û hem jî yên navneteweyî re, em bi pêşkêşkirina encamên têkildar ên gerdûnî yên agahdarkirî, herêmî yên ku ji xerîdarên me re dibin alîkar ku bigihîjin armancên xwe serbilind in.",
-    "become_one_of_us": "",
-    "button_join_us": ""
+    "become_one_of_us": "Bibin beşek ji tîma me",
+    "button_join_us": "Tevlî Me Bibe"
   },
   "services": {
     "landing_h1": "Xizmetên me",
 
-    "landing_p": "",
+    "landing_p": "Em gelek karûbaran pêşkêş dikin ku li gorî hewcedariyên rêxistinên ku li bakur-rojhilatê Sûriyê kar dikin",
     "our_services": "Xizmetên me",
     "our_services_p": "Li NESCO, em gelek xizmetên lihevhatî pêşkêş dikin ku ji bo pêdiviyên rêxistinên ku li Bakur-Rojhilatê Sûriyê dixebitin pêk bînin. Pisporiya me ya di şopandin, nirxandin, avakirina kapasîteyê û şêwirdariyê de alîkariya NGO, NGOyên herêmî, pargîdan û yên din dike ku di hawîrdorên tevlihev de bi bandortir tevbigerin. Her karûbarên me di pabendbûna me de ji bo peydakirina çareseriyên rast, pêbawer, û çarenûsê-taybetî ve girêdayî ye.",
     "third_party_monitoring": "Çavdêriya Partiya Sêyem (TPM)",
@@ -58,7 +58,7 @@
     "awarness_campaigns_p": "Karûbarên me yên kampanyaya hişyariyê ji rêxistinan re dibe alîkar ku bi temaşevanên xwe re bi bandor ragihînin. Ji perwerdehiya tenduristiyê bigire heya guheztina behremendiya civakî, em kampanyayên ku civakan tevdigerin, hişyariyê bilind dikin, û guhertinên behrê yên erênî dimeşînin sêwirandin û bicîh dikin. Kampanyayên me li ser têgihiştinek kûr a çand û şertên herêmî têne bingeh kirin, ku ew bi temaşevanên armanckirî re têkildar in.",
     "technical_consulting": "Şêwirmendiya Teknîkî û Îdarî",
     "technical_consulting_p": "NESCO karûbarên şêwirmendiya pispor peyda dike da ku alîkariya rêxistinan bike ku pirsgirêkên teknîkî û îdarî yên tevlihev rêve bibin. Çi ew stratejiyên nû pêş dixin, karbidestên xebitandinê baştir dikin, an jî pêbendbûna bi daxwazên xêrxwazan re misoger dike, tîmê me li vir e ku bi rêbernameya desta û çareseriyên guncan piştgirî bide rêxistina we.",
-    "button_contact_us": ""
+    "button_contact_us": "Pêwendî Bike"
   },
   "about": {
     "landing_h1": "Li ser NESCO",
@@ -77,27 +77,27 @@
     "meet_our_team_p": "NESCO tîmek pisporên pir bi tecrûbe yên pispor di çavdêrîkirin û nirxandin, analîzkirina daneyan, û avakirina kapasîteyê de li ser gelek sektoran berhev dike. Bi têgihiştinek kûr hem ji çarçoveyên herêmî û hem jî yên navneteweyî re, em bi pêşkêşkirina encamên têkildar ên gerdûnî yên agahdarkirî, herêmî yên ku ji xerîdarên me re dibin alîkar ku bigihîjin armancên xwe serbilind in."
   },
   "contact": {
-    "contact_h1": "",
-    "contact_p": "",
-    "please_enter_name": "",
-    "please_enter_phone": "",
-    "please_enter_email": "",
-    "please_enter_message": "",
-    "button_submit": "",
-    "become_one_of_us": "",
-    "join_us": ""
+    "contact_h1": "Pêwendî Bike",
+    "contact_p": "Pirsa te heye? Bi me re têkilî daynin û em ê di demek nêz de bersivê bidin",
+    "please_enter_name": "Ji kerema xwe navê xwe binivîse",
+    "please_enter_phone": "Ji kerema xwe hejmara têlefonê binivîse",
+    "please_enter_email": "Ji kerema xwe email a xwe binivîse",
+    "please_enter_message": "Ji kerema xwe peyama xwe binivîse",
+    "button_submit": "şandin",
+    "become_one_of_us": "Bibin beşek ji tîmê me?",
+    "join_us": "tevlî me bibin"
   },
   "join_us": {
     "join_us_h1": "Tevlî me bibin",
-    "join_us_p": "",
-    "please_enter_name": "",
-    "please_enter_phone": "",
-    "please_enter_email": "",
-    "click_here_to_upload_cv": "",
-    "file_error": "",
+    "join_us_p": "Tevlî tîmê me bibin û bibin beşek ji civata me",
+    "please_enter_name": "Ji kerema xwe navê xwe binivîse",
+    "please_enter_phone": "Ji kerema xwe hejmara têlefonê binivîse",
+    "please_enter_email": "Ji kerema xwe email a xwe binivîse",
+    "click_here_to_upload_cv": "Ji bo barkirina CV pêl vir bike ",
+    "file_error": "Ji kerema xwe CV-ya xwe bar bikin",
 
-    "uploaded_file": "",
-    "please_enter_message": "",
-    "button_submit": ""
+    "uploaded_file": "Dosya hat barkirin",
+    "please_enter_message": "Ji kerema xwe peyama xwe binivîse",
+    "button_submit": "Şandin"
   }
 }
