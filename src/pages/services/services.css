@@ -38,7 +38,10 @@
   overflow: hidden;
   display: -webkit-box;
 }
-
+.services .details > a.btn {
+  border: solid 1px transparent;
+  background-color: #1ea3a41f;
+}
 .services .details > a {
   font-size: 12px;
   width: 100%;
