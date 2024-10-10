@@ -58,7 +58,7 @@ body.arabic main.home-landing .flex a i {
 }
 .about-home > div > article {
   flex: 50%;
-  height: 80vh;
+  max-height: 80vh;
   padding: 40px;
 }
 
@@ -106,7 +106,7 @@ body.arabic .home-team .grid-2 .info a i {
   .about-home .flex > div,
   .about-home .flex > article {
     flex: 100%;
-    max-height: 60vh;
+    max-height: 80vh;
   }
   .about-home .flex > article a {
     width: 150px;

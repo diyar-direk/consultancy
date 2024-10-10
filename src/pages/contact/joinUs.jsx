@@ -4,19 +4,24 @@ import { Context } from "../../context/Context";
 import FormLoading from "./FormLoading";
 import ReCAPTCHA from "react-google-recaptcha";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const JoinUs = () => {
   const context = useContext(Context);
   const language = context.language && context.language;
   const [capVal, setCapVal] = useState(null);
   const [errorData, setErrorData] = useState(false);
-  function overlay() {
-    setErrorData(true);
+  const [successData, setSuccessData] = useState(false);
+
+  function overlay(res) {
+    res === "error" ? setErrorData(true) : setSuccessData(true);
     window.onclick = () => {
       setErrorData(false);
+      setSuccessData(false);
     };
     setTimeout(() => {
       setErrorData(false);
+      setSuccessData(false);
     }, 3000);
   }
   const [form, setForm] = useState({
@@ -28,13 +33,14 @@ const JoinUs = () => {
   function handleForm(e) {
     setForm({ ...form, [e.target.id]: e.target.value });
   }
+  const nav = useNavigate();
   const [file, setFile] = useState(false);
   const [fileErr, setFileErr] = useState(false);
   const [loading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!file) {
-      setFileErr(true); // Ensure file is selected
+      setFileErr(true);
       return;
     }
     setLoading(true);
@@ -59,9 +65,9 @@ const JoinUs = () => {
       );
 
       if (response.data.success) {
-        alert("Message sent successfully!");
         if (response.status === 200) {
-          window.location.reload(); // Reload page after successful submission
+          overlay("success");
+          nav("/");
         }
         setForm({
           name: "",
@@ -71,11 +77,12 @@ const JoinUs = () => {
         });
         setFile(null); // Reset file
       } else {
+        overlay("error");
         throw new Error("Failed to send the message");
       }
     } catch (error) {
       console.log(error);
-      overlay();
+      overlay("error");
     } finally {
       setLoading(false);
     }
@@ -87,6 +94,12 @@ const JoinUs = () => {
           <div className="error-send flex">
             <h1>{language.contact && language.join_us.error}</h1>
             <img src={require("./error.png")} alt="" />
+          </div>
+        )}
+        {successData && (
+          <div className="error-send flex">
+            <h1>{language.contact && language.contact.success}</h1>
+            <img src={require("./icons8-success-120.png")} alt="" />
           </div>
         )}
         <div className="image center flex-direction ">

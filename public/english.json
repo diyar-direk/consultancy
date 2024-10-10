@@ -5,7 +5,7 @@
     "about_us": "About Us",
     "contact_us": "Contact Us",
     "join_us": "Join Us",
-    "rights_reserved":"© 2024 All rights reserved for Blue Elite Tech."
+    "rights_reserved": "© 2024 All rights reserved for Blue Elite Tech."
   },
   "landing": {
     "landing_h1": "Welcome to NESCO",
@@ -89,7 +89,8 @@
     "button_submit": "Submit",
     "become_one_of_us": "Do you want to become one of us ?",
     "join_us": "  Join Us",
-    "error":"failed to send email try again letter"
+    "error": "failed to send email try again letter",
+    "success": "Your message has been sent successfully"
   },
   "join_us": {
     "left_header": "Job Opportunities",
@@ -104,6 +105,7 @@
     "uploaded_file": "Uploaded file :",
     "please_enter_message": "Please enter your message",
     "button_submit": "Submit",
-    "error":"failed to send email try again later"
+    "error": "failed to send email try again later",
+    "success": "Your message has been sent successfully"
   }
 }

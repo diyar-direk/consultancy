@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./contact.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../../context/Context";
 import FormLoading from "./FormLoading";
 import ReCAPTCHA from "react-google-recaptcha";
@@ -11,13 +11,17 @@ const Contact = () => {
   const language = context.language && context.language;
   const [capVal, setCapVal] = useState(null);
   const [errorData, setErrorData] = useState(false);
-  function overlay() {
-    setErrorData(true);
+  const [successData, setSuccessData] = useState(false);
+
+  function overlay(res) {
+    res === "error" ? setErrorData(true) : setSuccessData(true);
     window.onclick = () => {
       setErrorData(false);
+      setSuccessData(false);
     };
     setTimeout(() => {
       setErrorData(false);
+      setSuccessData(false);
     }, 3000);
   }
   const [form, setForm] = useState({
@@ -30,7 +34,7 @@ const Contact = () => {
   function handleForm(e) {
     setForm({ ...form, [e.target.id]: e.target.value });
   }
-
+  const nav = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -47,11 +51,12 @@ const Contact = () => {
         }
       ); // Adjust this API URL
       if (response.status === 200) {
-        window.location.reload(); // Reload page after successful submission
+        overlay("success");
+        nav("/");
       }
     } catch (error) {
       console.error("Error submitting form", error);
-      overlay(); // Show error overlay
+      overlay("error"); // Show error overlay
     } finally {
       setLoading(false); // Hide loading state
     }
@@ -64,6 +69,13 @@ const Contact = () => {
           <div className="error-send flex">
             <h1>{language.contact && language.contact.error}</h1>
             <img src={require("./error.png")} alt="" />
+          </div>
+        )}
+
+        {successData && (
+          <div className="error-send flex">
+            <h1>{language.contact && language.contact.success}</h1>
+            <img src={require("./icons8-success-120.png")} alt="" />
           </div>
         )}
 

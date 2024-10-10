@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <>
-      <main className="relative center">
+      <main className="relative center landing-img">
         <div className="container not-found">
           <div className="background">
             <div className="ground"></div>

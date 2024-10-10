@@ -5,7 +5,7 @@
     "about_us": "Di Derbarê Me",
     "contact_us": "Pêwendî Bike",
     "join_us": "Tevlî Me Bibe",
-    "rights_reserved":"© 2024 Hemû maf parastî ne bu Blue Elite Tech."
+    "rights_reserved": "© 2024 Hemû maf parastî ne bu Blue Elite Tech."
   },
   "landing": {
     "landing_h1": "Bi Xêr Hatî NESCO",
@@ -89,7 +89,8 @@
     "button_submit": "şandin",
     "become_one_of_us": "Bibin beşek ji tîmê me?",
     "join_us": "tevlî me bibin",
-    "error":"şandina email temam nebû paşê dîsa biceribîne"
+    "error": "şandina email temam nebû paşê dîsa biceribîne",
+    "success": "şandina temam bû"
   },
   "join_us": {
     "left_header": "Derfetên Kar",
@@ -105,6 +106,7 @@
     "uploaded_file": "Dosya hat barkirin",
     "please_enter_message": "Ji kerema xwe peyama xwe binivîse",
     "button_submit": "Şandin",
-    "error":"şandina email temam nebû paşê dîsa biceribîne"
+    "error": "şandina email temam nebû paşê dîsa biceribîne",
+    "success": "şandina temam bû"
   }
 }
