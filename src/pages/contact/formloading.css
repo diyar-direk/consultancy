@@ -1,0 +1,39 @@
+.form-loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009c;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+.form-loading > div {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: solid 4px;
+  animation: rotate 1s linear infinite;
+  border-color: transparent var(--main-color) var(--main-color);
+}
+.form-loading > div > div {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: solid 4px;
+  animation: rotate 10s linear infinite;
+  border-color: #87bc42 transparent #87bc42;
+}
+.form-loading > div > div > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 4px;
+  animation: rotate 20s linear infinite;
+  border-color: transparent #ffc318 #ffc318;
+}
+
+@keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}

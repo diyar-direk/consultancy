@@ -1,0 +1,244 @@
+main.home-landing {
+  height: calc(90vh - 70px);
+  background: url(./pexels-fauxels-3184416.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+main.home-landing img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  opacity: 0.3;
+  max-width: 300px;
+}
+main.home-landing img.left {
+  left: 0;
+}
+main.home-landing h1 {
+  color: white;
+  text-align: center;
+}
+main.home-landing h3 {
+  text-align: center;
+  color: white;
+  opacity: 0.7;
+  width: 60%;
+  font-weight: 500;
+}
+main.home-landing .flex {
+  margin-top: 20px;
+  column-gap: 20px;
+}
+main.home-landing .flex a i {
+  rotate: 45deg;
+  padding: 0px 6px;
+}
+body.arabic main.home-landing .flex a i {
+  rotate: -45deg;
+}
+.home-services .grid-3 {
+  margin-top: 50px;
+}
+.home-services .container > a {
+  margin: 0 auto;
+  display: block;
+  margin-top: 20px;
+}
+.about-home > div {
+  height: 100%;
+}
+.about-home > div > div {
+  flex: 50%;
+  background: url(./pexels-wildlittlethingsphoto-933964.jpg) center no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+.about-home > div > article {
+  flex: 50%;
+  height: 80vh;
+  padding: 40px;
+}
+
+.about-home > div > article p {
+  max-width: 80%;
+  margin: 20px auto;
+  font-weight: 500;
+}
+.home-team .grid-2 .info a {
+  margin-top: 15px;
+  text-align: center;
+  width: 180px;
+}
+
+.home-team .grid-2 img {
+  border-radius: 20px;
+}
+body.arabic .about-home {
+  direction: ltr;
+}
+body.arabic .home-team {
+  direction: ltr;
+}
+body.arabic .home-team .info {
+  direction: rtl;
+}
+body.arabic .about-home > div > article {
+  direction: rtl;
+}
+body.arabic .home-team .grid-2 .info a i {
+  rotate: 180deg;
+  margin-right: 5px;
+}
+@media (max-width: 1000px) {
+  main.home-landing h1 {
+    font-size: 25px;
+  }
+  main.home-landing h3 {
+    font-size: 16px;
+    width: 65%;
+  }
+  main.home-landing a {
+    font-size: 13px;
+  }
+  .about-home .flex > div,
+  .about-home .flex > article {
+    flex: 100%;
+    max-height: 60vh;
+  }
+  .about-home .flex > article a {
+    width: 150px;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  main.home-landing h1 {
+    font-size: 20px;
+  }
+  main.home-landing h3 {
+    font-size: 14px;
+    width: 80%;
+  }
+  main.home-landing a {
+    font-size: 11px;
+  }
+  .about-home > div > article p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 90%;
+  }
+  .about-home .flex > article a {
+    font-size: 14px;
+  }
+  .home-team .grid-2 .info h2 {
+    text-align: center;
+  }
+  .home-team .grid-2 .info a {
+    width: 150px;
+  }
+}
+
+@media (max-width: 540px) {
+  main.home-landing h1 {
+    font-size: 17px;
+  }
+  main.home-landing h3 {
+    font-size: 12px;
+    width: 90%;
+  }
+  main.home-landing img {
+    max-width: 180px;
+  }
+  main.home-landing {
+    height: calc(70vh - 70px);
+  }
+  .about-home > div > article p {
+    font-size: 12px;
+    text-align: center;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .about-home .flex > article a {
+    width: 130px;
+    font-size: 12px;
+  }
+  .about-home .flex > div,
+  .about-home .flex > article {
+    flex: 100% 1;
+    max-height: 50vh;
+  }
+  .home-team .grid-2 .info h2 {
+    font-size: 20px;
+  }
+  .home-team .grid-2 .info p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .home-team .grid-2 .info h3 {
+    font-size: 17px;
+    text-align: center;
+  }
+  .home-team .grid-2 .info a {
+    width: 140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 430px) {
+  main.home-landing h1 {
+    font-size: 14px;
+  }
+  main.home-landing h3 {
+    font-size: 11px;
+  }
+  main.home-landing a {
+    font-size: 9px;
+  }
+  .about-home > div > article p {
+    font-size: 11px;
+  }
+  .about-home .flex > article a {
+    width: 110px;
+    font-size: 11px;
+  }
+  .home-team .grid-2 .info h2 {
+    font-size: 18px;
+  }
+  .home-team .grid-2 .info p {
+    font-size: 12px;
+  }
+  .home-team .grid-2 .info h3 {
+    font-size: 16px;
+  }
+  .home-team .grid-2 .info a {
+    width: 125px;
+  }
+  .rc-anchor-normal .rc-anchor-pt {
+    margin-right: 33px !important;
+  }
+  .captcha iframe {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 275px;
+  }
+}
+
+@media (max-width: 380px) {
+  .captcha {
+    transform: scale(0.8);
+    width: 100%;
+    margin-right: 33px;
+  }
+  body.arabic .captcha {
+    margin-left: 33px;
+  }
+  .captcha div {
+    left: 0 !important;
+    max-width: 200px !important;
+  }
+}

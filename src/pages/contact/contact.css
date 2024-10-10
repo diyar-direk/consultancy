@@ -1,0 +1,253 @@
+.contact-landing {
+  min-height: calc(100vh - 70px) !important;
+}
+.contact-landing .image {
+  background: url(./contact.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  flex: 50%;
+  color: white;
+  padding: 20px;
+  min-height: 50vh;
+}
+.contact-landing .image h1 {
+  text-align: center;
+  font-size: 25px;
+}
+.contact-landing .image p {
+  max-width: 80%;
+  font-size: 14px;
+  text-align: center;
+}
+.contact-landing .image .social {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+}
+.contact-landing .image .social i {
+  color: var(--main-color);
+  font-size: 12px;
+  margin-right: 5px;
+  opacity: 0.6;
+}
+body.arabic .contact-landing .image .social i {
+  margin-right: 0px;
+  margin-left: 5px;
+}
+.contact-landing .image .social a {
+  font-size: 13px;
+  color: #eee;
+}
+
+.contact-landing .image .social a:hover {
+  color: var(--main-color);
+}
+
+.contact-landing > form {
+  padding: 20px 40px;
+  position: relative;
+  flex: 50%;
+}
+.contact-landing > form > div > h2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+.contact-landing > form .inp {
+  width: 90%;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: solid 1px var(--border-color);
+}
+.contact-landing > form .inp:focus-within,
+.contact-landing > form textarea:focus {
+  border: solid 1px var(--main-color);
+}
+.contact-landing > form .inp i {
+  margin: 0px 15px;
+  color: var(--hover-color);
+  opacity: 0.7;
+}
+.contact-landing > form .inp input {
+  border: none;
+  background-color: transparent;
+  padding: 12px 10px;
+  width: 100%;
+}
+.contact-landing > form textarea {
+  width: 90%;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 10px;
+  resize: none;
+  border: solid 1px var(--border-color);
+  outline: none;
+}
+
+.contact-landing > form textarea::placeholder,
+.contact-landing > form input::placeholder {
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+.contact-landing > form textarea:focus::placeholder,
+.contact-landing > form input:focus::placeholder {
+  opacity: 0;
+}
+
+.contact-landing > form > button {
+  width: 90%;
+}
+
+.contact-landing > form .form-p a {
+  color: var(--main-color);
+}
+
+.contact-landing.join .image {
+  background: url(./pexels-hillaryfox-1595385.jpg) center no-repeat;
+  background-size: cover;
+}
+.contact-landing > form label.inp {
+  padding: 12px 5px;
+  text-transform: capitalize;
+  color: #777;
+  cursor: pointer;
+}
+.contact-landing > form label.inp input {
+  display: none;
+}
+.contact-landing > form .inp + p {
+  margin-right: auto;
+}
+
+div.error-send {
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  box-shadow: 0px 3px 6px #77777747;
+}
+body.arabic div.error-send {
+  flex-direction: row-reverse;
+}
+div.error-send h1 {
+  font-weight: 500;
+  font-size: 17px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+div.error-send img {
+  width: 25px;
+  margin: 0 5px;
+}
+@media (max-width: 1000px) {
+  .contact-landing {
+    min-height: calc(100vh - 60px) !important;
+  }
+  .contact-landing > form > div > h2 {
+    font-size: 20px;
+  }
+  .contact-landing > form > div > p {
+    font-size: 13px;
+  }
+  .contact-landing > form {
+    padding: 20px;
+  }
+  .contact-landing > form .inp,
+  .contact-landing > form textarea,
+  .contact-landing > form > button {
+    width: 100%;
+  }
+  .contact-landing > form .inp input {
+    padding: 10px 10px;
+  }
+  .contact-landing > form label.inp {
+    padding: 10px 5px;
+  }
+  .contact-landing > form .inp i {
+    margin: 0px 12px;
+    font-size: 14px;
+  }
+  .contact-landing > form .form-p {
+    font-size: 15px;
+  }
+  .contact-landing .image h1 {
+    font-size: 20px;
+  }
+  .contact-landing .image p {
+    max-width: 90%;
+  }
+  .contact-landing .image .social a {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact-landing > form {
+    flex: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact-landing {
+    min-height: calc(100vh - 55px) !important;
+  }
+  div.error-send h1 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-landing .image h1,
+  .contact-landing > form > div > h2 {
+    font-size: 16px;
+  }
+  .contact-landing > form > div > p {
+    font-size: 12px;
+  }
+  .contact-landing .image p {
+    max-width: 100%;
+    font-size: 11px;
+  }
+  .contact-landing .image .social {
+    padding: 0 10px;
+  }
+  .contact-landing .image .social a {
+    font-size: 10px;
+  }
+  .contact-landing > form .form-p {
+    font-size: 14px;
+  }
+  .contact-landing > form .inp input {
+    padding: 8px;
+    font-size: 12px;
+  }
+  .contact-landing > form .inp + p {
+    font-size: 13px;
+  }
+  .contact-landing > form label.inp {
+    padding: 8px 5px;
+    font-size: 12px;
+  }
+  .contact-landing > form .inp i {
+    margin: 0px 10px;
+    font-size: 13px;
+  }
+  div.error-send img {
+    width: 20px;
+  }
+  div.error-send h1 {
+    font-size: 12px;
+  }
+}

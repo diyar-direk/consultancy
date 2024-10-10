@@ -1,0 +1,109 @@
+{
+  "header": {
+    "home": "Home",
+    "services": "Our Services",
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "join_us": "Join Us",
+    "rights_reserved":"© 2024 All rights reserved for Blue Elite Tech."
+  },
+  "landing": {
+    "landing_h1": "Welcome to NESCO",
+    "landing_p": "Your Partner in Innovative Consulting Solutions!",
+    "button_see_our_services": "See Our Services",
+    "button_get_started": "Get Started"
+  },
+  "home_services": {
+    "home_services_header": "Our Services",
+    "home_services_p": "We provide innovative solutions for success.",
+    "tpm_header": "Third-Party Monitoring (TPM).",
+    "tpm_p": "Our TPM services offer independent, objective assessments of projects and programs across various sectors.",
+    "training_header": "Capacity Building & Training.",
+    "training_p": "We offer capacity-building programs tailored to the needs of local NGOs, INGOs, and private organisations.",
+    "evaluations_header": "Evaluations (External & Internal).",
+    "evaluations_p": "We conduct both external and internal evaluations of projects and programs to assess their relevance, efficiency, effectiveness, sustainability, and impact.",
+    "button_get_started": "Get Started",
+    "button_read_more": "Read More",
+    "button_explore_our_services": "Explore Our Services"
+  },
+  "home_about": {
+    "home_about_header": "About Us",
+    "home_about_header_p": "Our goal is to exceed your expectations.",
+    "home_services_p": "At NESCO, we are committed to delivering accurate, reliable, and impactful monitoring, evaluation, and capacity-building services to organisations operating in Northeast Syria. Founded with the mission of supporting humanitarian, development, and private sector actors, our goal is to provide evidence-based insights that guide effective decision-making and promote sustainable outcomes.",
+    "button_contact_us": "Contact Us",
+    "button_read_more": "Read More"
+  },
+  "home_our_team": {
+    "home_our_team_header": "Our Team",
+    "home_our_team_header_p": "Dedicated experts delivering results.",
+    "home_our_team_h1": "Meet Our Team",
+    "home_our_team_p": "NESCO brings together a team of highly experienced professionals with expertise in monitoring and evaluation, data analysis, and capacity-building across multiple sectors. With a deep understanding of both local and international contexts, we pride ourselves on delivering globally informed, regionally relevant results that help our clients achieve their objectives.",
+    "become_one_of_us": "Do you want to become one of us?",
+    "button_join_us": "Join Us"
+  },
+  "services": {
+    "landing_h1": "Our Services",
+    "landing_p": "We provide a wide range of tailored services designed to meet the needs of organisations working in Northeast Syria.",
+    "our_services": "Our Services",
+    "our_services_p": "At NESCO, we provide a wide range of tailored services designed to meet the needs of organisations working in Northeast Syria. Our expertise in monitoring, evaluation, capacity building, and consultations helps INGOs, local NGOs, companies, and others operate more effectively in complex environments. Each of our services is rooted in our commitment to delivering accurate, reliable, and context-specific solutions.",
+    "third_party_monitoring": "Third-Party Monitoring (TPM)",
+    "third_party_monitoring_p": "Our TPM services offer independent, objective assessments of projects and programs across various sectors. We gather and analyse data directly from the field, providing our clients with credible, evidence-based information to measure progress, ensure compliance, and enhance program outcomes. Whether you need project verification or compliance monitoring, we deliver trustworthy insights that enable effective decision-making.",
+    "evaluations": "Evaluations (External & Internal)",
+    "evaluations_p": "We conduct both external and internal evaluations of projects and programs to assess their relevance, efficiency, effectiveness, sustainability, and impact. Our team uses a mix of qualitative and quantitative methods to provide comprehensive evaluation reports that help organisations understand the successes and challenges of their initiatives. Our evaluations provide actionable recommendations to enhance future programming.",
+    "needs_assessments": "Needs Assessments",
+    "needs_assessments_p": "NESCO specialises in conducting needs assessments that enable organisations to better understand the needs of the communities they serve. Using rigorous data collection and analysis techniques, we identify gaps and opportunities, helping our clients design interventions that are both relevant and impactful. Our assessments cover multiple sectors, including food security, education, health, and water, sanitation, and hygiene (WASH).",
+    "capacity_training": "Capacity Building & Training",
+    "capacity_training_p": "We offer capacity-building programs tailored to the needs of local NGOs, INGOs, and private organisations. Our workshops and training programs focus on building skills in areas such as project management, monitoring and evaluation, data collection methods, and reporting. Whether it’s technical or vocational training, NESCO equips individuals and teams with the knowledge and tools they need to perform at their best.",
+    "awarness_campaigns": "Awareness Campaigns",
+    "awarness_campaigns_p": "Our awareness campaign services help organisations communicate effectively with their target audiences. From health education to social behaviour change, we design and implement campaigns that engage communities, raise awareness, and drive positive behavioural changes. Our campaigns are grounded in a deep understanding of local cultures and contexts, ensuring they resonate with the intended audience.",
+    "technical_consulting": "Technical and Administrative Consultations",
+    "technical_consulting_p": "NESCO provides expert consultation services to help organisations navigate complex technical and administrative challenges. Whether it’s developing new strategies, improving operational efficiencies, or ensuring compliance with donor requirements, our team is here to support your organisation with hands-on guidance and tailored solutions.",
+    "button_contact_us": "Contact Us"
+  },
+  "about": {
+    "landing_h1": "About Us",
+    "landing_before_span": "At",
+
+    "landing_span": "NESCO",
+    "landing_p": "we are committed to delivering accurate, reliable, and impactful monitoring, evaluation, and capacity-building services to organisations operating in Northeast Syria. Founded with the mission of supporting humanitarian, development, and private sector actors, our goal is to provide evidence-based insights that guide effective decision-making and promote sustainable outcomes.",
+    "our_mission": "Our Mission",
+    "our_mission_p": "NESCO’s mission is to offer high-quality third-party monitoring, evaluations, and technical consultations, specifically tailored to the complex challenges of Northeast Syria. By combining local knowledge with global best practices, we ensure our clients receive accurate, context-specific information to drive their programs forward.",
+    "our_vision": "Our Vision",
+    "our_vision_p": "We envision a future where organisations working in conflict-affected regions have access to trustworthy local expertise and culturally informed perspectives, empowering them to make data-driven decisions that improve lives and communities.",
+    "why_nesco": "Why NESCO?",
+    "why_nesco_p": "Inspired by the resilience and historical significance of the ancient city of Orkesh, NESCO stands as a modern-day symbol of reliability and precision in the field of monitoring and evaluation. Just as Orkesh was a cornerstone of ancient civilization, NESCO is a trusted partner for organisations seeking comprehensive and dependable data and insights in the region. Our deep understanding of the local context and unwavering commitment to accuracy make us the ideal choice for organisations needing honest, actionable information.",
+    "our_approach": "Our Approach",
+    "our_approach_p": "We believe in a client-focused, collaborative approach, placing the needs of our partners at the centre of our work. Our team specialises in conducting independent assessments, needs analyses, and capacity-building workshops, employing cutting-edge methodologies to ensure the highest standards of quality. Objectivity, reliability, and deep local expertise define our approach, and our clients trust us to provide solutions that make a difference.",
+    "meet_our_team": "Meet Our Team",
+    "meet_our_team_p": "NESCO brings together a team of highly experienced professionals with expertise in monitoring and evaluation, data analysis, and capacity-building across multiple sectors. With a deep understanding of both local and international contexts, we pride ourselves on delivering globally informed, regionally relevant results that help our clients achieve their objectives."
+  },
+  "contact": {
+    "left_header": "Get in Touch",
+    "left_p": "We are here to assist you with any inquiries.",
+    "contact_h1": "Contact Us Right Now",
+    "contact_p": "Please complete the form below and the seller will receive your message.",
+    "please_enter_name": "Please enter your name",
+    "please_enter_phone": "Please enter your phone number",
+    "please_enter_email": "Please enter your email address",
+    "please_enter_message": "Please enter your message",
+    "button_submit": "Submit",
+    "become_one_of_us": "Do you want to become one of us ?",
+    "join_us": "  Join Us",
+    "error":"failed to send email try again letter"
+  },
+  "join_us": {
+    "left_header": "Job Opportunities",
+    "left_p": "Join our team and be part of our community.",
+    "join_us_h1": "Join Us Right Now",
+    "join_us_p": "Please complete the form below and the recruiter will receive your message.",
+    "please_enter_name": "Please enter your name",
+    "please_enter_phone": "Please enter your phone number",
+    "please_enter_email": "Please enter your email address",
+    "click_here_to_upload_cv": "Click here to upload your CV",
+    "file_error": "please upload your CV ",
+    "uploaded_file": "Uploaded file :",
+    "please_enter_message": "Please enter your message",
+    "button_submit": "Submit",
+    "error":"failed to send email try again later"
+  }
+}
