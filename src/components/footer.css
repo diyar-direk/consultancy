@@ -5,7 +5,10 @@ footer {
   overflow: hidden;
 }
 footer .info h1 {
-  text-transform: capitalize;
+  color: #aaa;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 28px;
 }
 footer .info a {
   width: 30px;
@@ -73,7 +76,7 @@ footer > .container.center {
 }
 @media (max-width: 500px) {
   footer .info h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   footer .links a,
   footer .info a {

@@ -21,7 +21,7 @@
   border-radius: 50%;
   border: solid 4px;
   animation: rotate 10s linear infinite;
-  border-color: var(--main-color) transparent var(--main-color);
+  border-color: #87bc42 transparent #87bc42;
 }
 .form-loading > div > div > div {
   width: 40px;
@@ -29,7 +29,7 @@
   border-radius: 50%;
   border: solid 4px;
   animation: rotate 20s linear infinite;
-  border-color: transparent var(--main-color) var(--main-color);
+  border-color: transparent #ffc318 #ffc318;
 }
 
 @keyframes rotate {

@@ -54,11 +54,14 @@ const Services = () => {
             <div className="info">
               {/* محتوى الأقسام */}
               <div id="our_services">
-                <h1> {language.services && language.services.our_services}</h1>
+                <h1 className="orang">
+                  {" "}
+                  {language.services && language.services.our_services}
+                </h1>
                 <p>{language.services && language.services.our_services_p}</p>
               </div>
               <div id="third">
-                <h1>
+                <h1 className="green">
                   {language.services &&
                     language.services.third_party_monitoring}
                 </h1>
@@ -77,7 +80,7 @@ const Services = () => {
                 <p>{language.services && language.services.evaluations_p}</p>
               </div>
               <div id="Needs">
-                <h1>
+                <h1 className="yellow">
                   {language.services && language.services.needs_assessments}
                 </h1>
                 <p>
@@ -85,7 +88,7 @@ const Services = () => {
                 </p>
               </div>
               <div id="Capacity">
-                <h1>
+                <h1 className="pink">
                   {language.services && language.services.capacity_training}
                 </h1>
                 <img
@@ -98,7 +101,7 @@ const Services = () => {
                 </p>
               </div>
               <div id="Awareness">
-                <h1>
+                <h1 className="darkblue">
                   {language.services && language.services.awarness_campaigns}
                 </h1>
                 <p>
@@ -106,7 +109,7 @@ const Services = () => {
                 </p>
               </div>
               <div id="Technical">
-                <h1>
+                <h1 className="lightblue">
                   {language.services && language.services.technical_consulting}
                 </h1>
                 <img

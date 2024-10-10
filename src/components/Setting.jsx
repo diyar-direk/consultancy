@@ -21,16 +21,9 @@ const Setting = (props) => {
   useEffect(() => {
     const span = document.querySelectorAll(".language > div span");
     const allLanguages = document.querySelectorAll(".language  .lang-div p");
-    selectedLang &&
-      selectedLang === "arabic" ?
-      document.body.classList.add("arabic"):
-      document.body.classList.remove("arabic");
-
-
-
-
-
-
+    selectedLang && selectedLang === "arabic"
+      ? document.body.classList.add("arabic")
+      : document.body.classList.remove("arabic");
 
     allLanguages.forEach((e) => {
       e.classList.remove("active");

@@ -12,7 +12,7 @@ const AboutUs = () => {
             <div className="text flex-direction center">
               <h1>{language.about && language.about.landing_h1}</h1>
               <p>
-                {language.about && language.about.landing_before_span}{" "}
+                {language.about && language.about.landing_before_span}
                 <span> {language.about && language.about.landing_span} </span>
                 {language.about && language.about.landing_p}
               </p>

@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className="grid-3">
           <div className="info">
-            <h1>title</h1>
+            <h1>NESCO</h1>
             <div className="flex column-gap-10">
               <a className="whatsapp" href="" target="_blank">
                 <i className="fa-brands fa-whatsapp"></i>

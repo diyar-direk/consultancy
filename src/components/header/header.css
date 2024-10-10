@@ -37,11 +37,11 @@ header.scroll .language i {
   color: white;
 }
 header .logo {
-  width: 45px;
+  width: 130px;
   object-fit: contain;
 }
 header div.flex-1 a {
-  font-size: 17px;
+  font-size: 16px;
   margin: 0 10px;
   font-weight: 600;
   text-transform: capitalize;
@@ -160,10 +160,13 @@ body.arabic nav.navbar .flex > i {
 @media (max-width: 1000px) {
   header div.flex-1 a,
   .language {
-    font-size: 14px;
+    font-size: 13px;
   }
   header {
     height: 60px;
+  }
+  header .logo {
+    width: 100px;
   }
 }
 @media (max-width: 750px) {
@@ -177,9 +180,7 @@ body.arabic nav.navbar .flex > i {
   header {
     height: 55px;
   }
-  header .logo {
-    width: 40px;
-  }
+
   .scroll-to-top.active {
     right: 25px;
     width: 35px;
@@ -188,9 +189,6 @@ body.arabic nav.navbar .flex > i {
   }
 }
 @media (max-width: 500px) {
-  header .logo {
-    width: 35px;
-  }
   nav.navbar a {
     font-size: 15px;
   }
@@ -199,5 +197,8 @@ body.arabic nav.navbar .flex > i {
     width: 30px;
     height: 30px;
     font-size: 13px;
+  }
+  header .logo {
+    width: 80px;
   }
 }

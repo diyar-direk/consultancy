@@ -33,6 +33,10 @@
   opacity: 0.8;
   margin-bottom: 15px;
   text-align: center;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
 
 .services .details > a {
@@ -91,6 +95,26 @@ body.arabic .services-page .info h1::before {
   margin-left: 10px;
   margin-right: 0px;
 }
+
+.services-page .info h1.orang::before {
+  background-color: #e86c25;
+}
+.services-page .info h1.green::before {
+  background-color: #87bc42;
+}
+.services-page .info h1.yellow::before {
+  background-color: #ffc318;
+}
+.services-page .info h1.pink::before {
+  background-color: #ee3897;
+}
+.services-page .info h1.darkblue::before {
+  background-color: #0e56a5;
+}
+.services-page .info h1.lightblue::before {
+  background-color: #29ace2;
+}
+
 .services-page .info img {
   max-height: 400px;
   width: 100%;

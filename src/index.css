@@ -79,9 +79,9 @@ h1 > span.inside-span {
 }
 body {
   --body-color: #fff;
-  --main-color: #07c1eb;
+  --main-color: #1ea3a4;
   --border-color: #83838340;
-  --hover-color: #1088a3;
+  --hover-color: #158285;
   --section-color: #f1f1f1;
   background-color: var(--body-color);
   overflow-x: hidden;
