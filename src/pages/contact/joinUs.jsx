@@ -34,23 +34,50 @@ const JoinUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!file) {
-      setFileErr(true);
-    } else {
-      try {
-        const formData = new FormData();
-        formData.append("name", form.name);
-        formData.append("phone", form.phone);
-        formData.append("email", form.email);
-        formData.append("message", form.message);
-        formData.append("file", file);
-        await axios.post("dasdas");
-        window.location.reload();
-      } catch (error) {
-        console.log(error);
-        overlay();
-      } finally {
-        setLoading(false);
+      setFileErr(true); // Ensure file is selected
+      return;
+    }
+    setLoading(true);
+
+    try {
+      const formData = new FormData();
+      formData.append("name", form.name);
+      formData.append("phone", form.phone);
+      formData.append("email", form.email);
+      formData.append("message", form.message);
+      formData.append("file", file); // Append the file
+
+      // Send POST request to the server
+      const response = await axios.post(
+        "https://nesconsultancy.org/backend/sendemail.php", // Replace with your endpoint
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+
+      if (response.data.success) {
+        alert("Message sent successfully!");
+        if (response.status === 200) {
+          window.location.reload(); // Reload page after successful submission
+        }
+        setForm({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+        setFile(null); // Reset file
+      } else {
+        throw new Error("Failed to send the message");
       }
+    } catch (error) {
+      console.log(error);
+      overlay();
+    } finally {
+      setLoading(false);
     }
   };
   return (
@@ -77,7 +104,7 @@ const JoinUs = () => {
             <div className="center">
               <i className="fa-solid fa-envelope"></i>
               <a target="_blank" href="">
-                diyardireki111@gmail.com
+                ceo@nesconsultancy.org
               </a>
             </div>
             <div className="center">

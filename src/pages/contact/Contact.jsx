@@ -30,20 +30,33 @@ const Contact = () => {
   function handleForm(e) {
     setForm({ ...form, [e.target.id]: e.target.value });
   }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+
     try {
-      await axios.post("dass");
-      window.location.reload();
+      // Send form data to your backend endpoint
+      const response = await axios.post(
+        "https://nesconsultancy.org/backend/sendemail.php",
+        form,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      ); // Adjust this API URL
+      if (response.status === 200) {
+        window.location.reload(); // Reload page after successful submission
+      }
     } catch (error) {
-      console.log(error);
-      overlay();
+      console.error("Error submitting form", error);
+      overlay(); // Show error overlay
     } finally {
-      setLoading(false);
+      setLoading(false); // Hide loading state
     }
   };
-  //nescoprovider@gmail.com
-  //ceo@nesconsultancy.org
+
   return (
     <>
       <main className="relative contact-landing wrap landing-img flex">
@@ -69,7 +82,7 @@ const Contact = () => {
             <div className="center">
               <i className="fa-solid fa-envelope"></i>
               <a target="_blank" href="">
-                diyardireki111@gmail.com
+                ceo@nesconsultancy.org
               </a>
             </div>
             <div className="center">
